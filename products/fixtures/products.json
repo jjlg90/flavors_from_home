@@ -1,0 +1,481 @@
+[{
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798128000479",
+        "name": "Cachafaz Alfajor Dark Chocolate with Dulce de Leche (box of 6)",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! Soft and fresh cookies that melt in your mouth, delicious and creamy Dulce de leche, coated in the most exquisite dark chocolate.",
+        "brand": "Cachafaz is a young brand of no more than 12 years old. The company started selling 'Alfajores de Maicena', but slowly made their name known by placing their classic Alfajor on the list of the best of the country. Now it is a leader brand and they expanded their products selling all different types of alfajores, cookies and Dulce de Leche.",
+        "price": 9.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "cachafaz-dark.jpg",
+        "image_2":"cachafaz-dark-box.jpg"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798128000493",
+        "name": "Cachafaz Alfajor White Chocolate with Dulce de Leche (box of 6)",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! Soft and fresh cookies that melt in your mouth, delicious and creamy Dulce de leche, coated in the most exquisite white chocolate.",
+        "brand": "Cachafaz is a young brand of no more than 12 years old. The company started selling 'Alfajores de Maicena', but slowly made their name known by placing their classic Alfajor on the list of the best of the country. Now it is a leader brand and they expanded their products selling all different types of alfajores, cookies and Dulce de Leche.",
+        "price": 9.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "cachafaz-white.jpg",
+        "image_2":"cachafaz-white-box.jpg"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798128000165",
+        "name": "Cachafaz Alfajor Cornstarch Maicena with Grated Coconut and Dulce de Leche (box of 6)",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! A classic of Cachafaz, cornstarch cookies and creamy abundant Dulce de Leche with grated coconut.",
+        "brand": "Cachafaz is a young brand of no more than 12 years old. The company started selling 'Alfajores de Maicena', but slowly made their name known by placing their classic Alfajor on the list of the best of the country. Now it is a leader brand and they expanded their products selling all different types of alfajores, cookies and Dulce de Leche.",
+        "price": 11.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "cachafaz-maicena.jpg",
+        "image_2":"cachafaz-maicena-box.jpg"
+    }
+},
+{
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798128000509",
+        "name": "Cachafaz Alfajor Milk Chocolate and White Chocolate with Dulce de Leche (mixed box of 12)",
+        "description": "ASSORTED BOX OF 12 ALFAJORES - Share it with your friends or save them for yourself! DARK CHOCOLATE AND WHITE CHOCOLATE COATED- Coated in special and intense dark and white chocolate.",
+        "brand": "Cachafaz is a young brand of no more than 12 years old. The company started selling 'Alfajores de Maicena', but slowly made their name known by placing their classic Alfajor on the list of the best of the country. Now it is a leader brand and they expanded their products selling all different types of alfajores, cookies and Dulce de Leche.",
+        "price": 17.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "cachafaz-mix-.jpg",
+        "image_2":"cachafaz-mix-box.jpg"
+    }
+},
+{
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798128000612",
+        "name": "Cachafaz Alfajor Milk Chocolate with Chocolate Mousse (box of 6)",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! DARK CHOCOLATE AND MOUSSE FILLING - Coated in special and intense dark chocolate and filled with mousse.",
+        "brand": "Cachafaz is a young brand of no more than 12 years old. The company started selling 'Alfajores de Maicena', but slowly made their name known by placing their classic Alfajor on the list of the best of the country. Now it is a leader brand and they expanded their products selling all different types of alfajores, cookies and Dulce de Leche.",
+        "price": 9.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "cachafaz-mix.jpg",
+        "image_2":"cachafaz-mix-box.jpg"
+    }
+},
+{
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798128001797",
+        "name": "Cachafaz Dulce de Leche Conitos Cone Cookies Filled with Creamy Dulce de Leche and Milk Chocolate Covered, 456 g / 16 oz (box of 12)",
+        "description": "COFFEE’S BEST FRIEND - If you love sweet things with your coffee, these little cones are the greatest companions. A soft sweet cookie, the best Dulce de Leche and dark chocolate coating.",
+        "brand": "Cachafaz is a young brand of no more than 12 years old. The company started selling 'Alfajores de Maicena', but slowly made their name known by placing their classic Alfajor on the list of the best of the country. Now it is a leader brand and they expanded their products selling all different types of alfajores, cookies and Dulce de Leche.",
+        "price": 9.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "conito.jpg",
+        "image_2":"conito-box.jpg"
+    }
+},
+{
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798039910027",
+        "name": "Capitán del Espacio Alfajor with Dulce de Leche Rare Difficult to Find (pack of 6)",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! SIMPLE BUT DELICIOUS - Two soft cookies and a nice, pleasant layer of Dulce de Leche.",
+        "brand": "On February 2nd of 1962 Capitán del Espacio started running until becoming, 55 years later, one of the more legendary Alfajores of the country. A man who worked in the meat business around the sixties, decided to change his history and convinced a friend to become his associate and buy a factory with him. Together they faced this challenge and after tasting 20 different Alfajores, they invented one of the most iconic ones of Buenos Aires.",
+        "price": 8.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "capitan-dark.jpg",
+        "image_2":"capitan-box.jpg"
+    }
+},
+{
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798039910041",
+        "name": "Capitán del Espacio Blanco Alfajor Dulce de Leche Filling Sugar Coating Difficult to Find (pack of 6)",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! SIMPLE BUT DELICIOUS - Two soft cookies and a nice, pleasant layer of Dulce de Leche.",
+        "brand": "On February 2nd of 1962 Capitán del Espacio started running until becoming, 55 years later, one of the more legendary Alfajores of the country. A man who worked in the meat business around the sixties, decided to change his history and convinced a friend to become his associate and buy a factory with him. Together they faced this challenge and after tasting 20 different Alfajores, they invented one of the most iconic ones of Buenos Aires.",
+        "price": 8.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "capitan-white.jpg",
+        "image_2":"capitan-box.jpg"
+    }
+},
+{
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+        "upc": "779003920034",
+        "name": "Terrabusi Alfajores Classic Milk Chocolate Filled with Dulce de Leche, box of 6",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! FILLED WITH HAPPINESS -Filled with delicious Dulce de Leche and covered with the best dark milk chocolate.",
+        "brand": "This is the brand of delightful and quality products for the members of the family. Each cookie is directed to a different and particular family member. The principal products that are commercialized under Terrabusi are: Galletitas (Express, Variedad, Lincoln, Manón, Duquesa, Melba, Anillitos, Boca de dama, Rococo); Alfajores (Terrabusi y Tita); Bañados (Tita, Rhodesia, Snacky, Habanitos, Mini Rhodesia)",
+        "price": 6.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "terrabusi-dark.jpg",
+        "image_2":"terrabusi-dark-box.jpg"
+    }
+},
+{
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+        "upc": "7622300202859",
+        "name": "Terrabusi Alfajores Sugar Frosting Filled with Dulce de Leche, Glaseado Relleno con Dulce de Leche, box of 6",
+        "description": "BOX OF 6 - Share it with your friends or save them for yourself! FILLED WITH HAPPINESS -Filled with delicious Dulce de Leche and sugar coated.",
+        "brand": "This is the brand of delightful and quality products for the members of the family. Each cookie is directed to a different and particular family member. The principal products that are commercialized under Terrabusi are: Galletitas (Express, Variedad, Lincoln, Manón, Duquesa, Melba, Anillitos, Boca de dama, Rococo); Alfajores (Terrabusi y Tita); Bañados (Tita, Rhodesia, Snacky, Habanitos, Mini Rhodesia)",
+        "price": 6.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "terrabusi-white.jpg",
+        "image_2":"terrabusi-white-box.jpg"
+    }
+},
+{
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+        "upc": "7622300335137",
+        "name": "Tita Chocolate Coated Cookie With Lemon Cream Filling Wholesale Bulk Box, 12 cookies x 18 g",
+        "description": "12 cookies x 18 g. DELICIOUS AND UNFORGETTABLE - Everyone has a memory related with a Tita, the best sweet treat of them all.",
+        "brand": "This is the brand of delightful and quality products for the members of the family. Each cookie is directed to a different and particular family member. The principal products that are commercialized under Terrabusi are: Galletitas (Express, Variedad, Lincoln, Manón, Duquesa, Melba, Anillitos, Boca de dama, Rococo); Alfajores (Terrabusi y Tita); Bañados (Tita, Rhodesia, Snacky, Habanitos, Mini Rhodesia)",
+        "price": 9.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "tita.jpg",
+        "image_2":"tita-box.jpg"
+    }
+},
+{
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+        "upc": "7622300423759",
+        "name": "Rhodesia Chocolate Coated Cookie With Lemon Cream Filling, 12 cookies x 22 g",
+        "description": "12 cookies x 22 g. GREAT TASTE AND QUALITY - Crunchy wafers covered in milk chocolate filled with lemon cream.",
+        "brand": "This is the brand of delightful and quality products for the members of the family. Each cookie is directed to a different and particular family member. The principal products that are commercialized under Terrabusi are: Galletitas (Express, Variedad, Lincoln, Manón, Duquesa, Melba, Anillitos, Boca de dama, Rococo); Alfajores (Terrabusi y Tita); Bañados (Tita, Rhodesia, Snacky, Habanitos, Mini Rhodesia)",
+        "price": 12.99,
+        "category": 1,
+        "rating": 5.0,
+        "image": "rhodesia.jpg",
+        "image_2":"rhodesia-box.jpg"
+    }
+},
+{
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790290101602",
+        "name": "Fernet Branca Bitter Amaro Herbal Infusion Liqueur Genuine Argentina Flavor Recipe (750 ml)",
+        "description": "Fernet Branca is a traditional Italian digestivo made from a secret mix of herbs including myrrh, saffron, chamomile and gentian. So popular in Argentina that the brand built a second distillery in Buenos Aires. A shot of Fernet Branca is often called the “bartender’s handshake” because of its popularity among professional mixologists.",
+        "brand": "Bitter since its inception in 1845, Fernet Branca has been produced according to the original recipe that has been handed down from generation to generation. The bitters are made from 27 herbs and other ingredients.",
+        "price": 21.99,
+        "category": 2,
+        "rating": 5.0,
+        "image": "fernet.jpg",
+        "image_2":"branca-drink.jpg"
+    }
+},
+{
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790290101473",
+        "name": "Fernet Branca Ricetta Italiana Bitter Amaro Herbal Infusion Liqueur Mint Flavor (750 ml)",
+        "description": "Fernet Branca is a traditional Italian digestivo made from a secret mix of herbs including myrrh, saffron, chamomile and gentian. So popular in Argentina that the brand built a second distillery in Buenos Aires. A shot of Fernet Branca is often called the “bartender’s handshake” because of its popularity among professional mixologists.",
+        "brand": "Bitter since its inception in 1845, Fernet Branca has been produced according to the original recipe that has been handed down from generation to generation. The bitters are made from 27 herbs and other ingredients.",
+        "price": 21.99,
+        "category": 2,
+        "rating": 5.0,
+        "image": "fernet-mint.jpg",
+        "image_2":"branca-drink.jpg"
+    }
+},
+{
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+        "upc": "7891136052000",
+        "name": "Campari Bitter Refreshing Drink Appetizer (750 ml)",
+        "description": "Campari is a traditional Italian drink, its recipe is a secret but the principal ingredients are bitter herbs, aromatic plants, fruits and water.",
+        "brand": "Campari Bitter Davide Campari Milano since 1860.",
+        "price": 22.99,
+        "category": 2,
+        "rating": 5.0,
+        "image": "campari.jpg",
+        "image_2":"campari-drink.jpg"
+    }
+},
+{
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+        "upc": "7791250001482",
+        "name": "Legui Licor Fino Fine Argentinian Liqueur by Irineo Leguisamo 750 ml)",
+        "description": "TRADITIONAL ARGENTINE LIQUOR - A classic beverage in the palate of the country. Made from sugar cane, macerated citrics and an infusion of selected natural herbs.",
+        "brand": "Legui is a fine Argentine liquor obtained from sugar canes. It is elaborated with an infusion of aromatic herbs, caramel and macerated citrics. Its name comes from a renowned Uruguayan jockey Irineo Leguisamo, who had an extense trajectory. This beverage is an aperitive sold in glass bottles of 750ml, its ABV is 29.9°. It was originally produced by Orandi and Massera but nowadays it is elaborated by Grupo Peñaflor company in Godoy Cruz in Mendoza province.",
+        "price": 12.99,
+        "category": 2,
+        "rating": 5.0,
+        "image": "legui.jpg",
+        "image_2":"legui-drink.jpg"
+    }
+},
+{
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+        "upc": "7791200000626",
+        "name": "Cynar Receta Original Aperitivo A Base de Hierbas & Hojas de Alcachofas Appetizer Drink Made with Herbs & Artichokes Ideal For Cocktails with Grapefruit Soda (750 ml)",
+        "description": "Cynar is a traditional Italian appetizer drink made with artichoke leaves and 13 different mixed herbs.",
+        "brand": "Recently, one of the most popular drinks in Argentina.That's why since 2012 the brand built a second distillery in Buenos Aires with the name of Gruppo Campari.",
+        "price": 21.99,
+        "category": 2,
+        "rating": 5.0,
+        "image": "cynar.png",
+        "image_2":"cynar-drink.jpg"
+    }
+},
+{
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+        "upc": "7791200049734",
+        "name": "Catena Zapata Nicasia Vineyards Red Blend Malbec 2015",
+        "description": "Ranked fourth among the wines from this region with respect to number of prizes won: the 2013 vintage was awarded Gold from the Decanter World Wine Awards, and the 2011 vintage was awarded Gold, Trophy from the International Wine Challenge.",
+        "brand": "Located in the far southerly growing region of Altamira en La Consulta, the Nicasia vineyard is the only planting of the special Catena Selection of Malbec cuttings in this traditional area for Malbec. La Consulta was Nicolás Catena’s father Domingo’s prefered Malbec location.",
+        "price": 59.99,
+        "category": 3,
+        "rating": 5.0,
+        "image": "nicasia.png",
+        "image_2":"nicasia-2.jpg"
+    }
+},
+{
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+        "upc": "7791200049735",
+        "name": "Catena Zapata Malbec 2019",
+        "description": "No matter what the vintage, this wine is really more than 100 years old. It represents a family's journey to produce an Argentine Malbec that can stand with the great wines of the world.",
+        "brand": "Old Vines from the Catena Zapata Family Vineyards, Nicasia and Angélica. The origins of the vines, which we call “The Catena Cuttings”, is a prephyloxeric Massale Selection from the Angélica Vineyard.",
+        "price": 89.99,
+        "category": 3,
+        "rating": 5.0,
+        "image": "catena.jpg",
+        "image_2":"catena-2.jpg"
+    }
+},
+{
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+        "upc": "7791200049736",
+        "name": "Rutini Malbec 2016",
+        "description": "A concentrated nose with elements of wild berries, tobacco and vanilla. The palate is full, with rich black fruit flavors and a long, lingering finish with a touch of black pepper spice.",
+        "brand": "At the foot of the Andes Mountains, in the heart of the Alto Valle de Uco, Rutini creates and design wines that display all the potential of a privileged soil.",
+        "price": 22.99,
+        "category": 3,
+        "rating": 5.0,
+        "image": "rutini.jpg",
+        "image_2":"rutini-glass.jpg"
+    }
+},
+{
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+        "upc": "7791200049737",
+        "name": "LAMADRID CABERNET FRANC RESERVA 2012",
+        "description": "100% Cabernet Francfrom the La Suiza vineyard in Agrelo, Mendoza, Argentina. The wine is aged for 14 months in 50% second use and 50% third use French oak and has just 2.15 g/L of residual sugar.",
+        "brand": "This single vineyard Reserva line from Agrelo reflects the identity of a privileged terroir in a select area of Mendoza, at the foothills of the Andes. The balance of fruit and well integrated oak in this reserve line results in unique and expressive wines with exceptional quality. Sustainably farmed and estate bottled.",
+        "price": 49.99,
+        "category": 3,
+        "rating": 5.0,
+        "image": "lamadrid.jpg",
+        "image_2":"lamadrid-2.jpg"
+    }
+},
+{
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+        "upc": "7791451801140",
+        "name": "Esnaola Dulce de Batata Creamed Sweet Potato Jelly with Vanilla and Chocolate, 700 g",
+        "description": "As hard as it is to describe something you can’t find anywhere else, picture a lighter, wobblier version of the Imo Yokan (Asian sweet potato jelly). Sweet and slightly earthy, the “dulce de batata” is a must for the classic Argentinean dessert “queso y dulce” (which literally means “cheese and jelly”). You can finally attempt to settle the national dispute over sweet potato jelly or quince jelly: decide which one’s best. If you have a sweet tooth, this dulce is also perfect on its own, by the slice.",
+        "brand": "Esnaola is a classic argentinian brand.",
+        "price": 7.99,
+        "category": 4,
+        "rating": 5.0,
+        "image": "esnaola.jpg",
+        "image_2":"esnaola-2.jpg"
+    }
+},
+{
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+        "upc": "7798128001902",
+        "name": "Cachafaz Dulce de Leche (450 g)",
+        "description": "Dulce de Leche is made of three of the best things in life: Sugar, milk and vanilla, when blended perfectly they become this milky, creamy, and caramel tasty butter. Cachafaz, known by their delicious alfajores, has decided to sell the star ingredient of the recipe for it to be enjoyed on its own. If you haven’t tasted the alfajores yet, don’t forget you can buy them online here.",
+        "brand": "Dulce de Leche Cachafaz is one of the smoothest and creamiest in the market.",
+        "price": 8.99,
+        "category": 4,
+        "rating": 5.0,
+        "image": "cachafaz-ddl.png",
+        "image_2":"cachafaz-mix.jpg"
+    }
+},
+{
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790742625502",
+        "name": "La Serenísima Dulce de Leche Tradición Argentina NEW! Intense Flavor, 400 g",
+        "description": "Dulce de Leche is made of three of the best things in life: Sugar, milk and vanilla, when blended perfectly they become this milky, creamy, and caramel tasty butter. ARGENTINIANS FAVORITE DULCE DE LECHE - One of the best choices for daily consumption.",
+        "brand": "La Serenísima became the first in Argentina to provide nutritional facts on each bottle. The company pioneered the sale of lactose-free milk in Argentina in 1984, became the market leader in the sale of yogurt and introduced cultured milk locally, in 1988. La Serenísima also introduced large-scale organic dairy farming in Argentina, in 1994, and became the first to fortify its products with iron sulfate.",
+        "price": 7.99,
+        "category": 4,
+        "rating": 5.0,
+        "image": "ls-tradicion.jpg",
+        "image_2":"cachafaz-mix.jpg"
+    }
+},
+{
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790742062505",
+        "name": "La Serenísima Dulce de Leche Repostero Thicker Perfect for Cakes, Bites, Biscuits & Baking at Home (400 g)",
+        "description": "Dulce de Leche is made of three of the best things in life: Sugar, milk and vanilla, when blended perfectly they become this milky, creamy, and caramel tasty butter. THICKER STYLE - More intense, heavy and thicker than the classic dulce de leche.",
+        "brand": "La Serenísima became the first in Argentina to provide nutritional facts on each bottle. The company pioneered the sale of lactose-free milk in Argentina in 1984, became the market leader in the sale of yogurt and introduced cultured milk locally, in 1988. La Serenísima also introduced large-scale organic dairy farming in Argentina, in 1994, and became the first to fortify its products with iron sulfate.",
+        "price": 6.99,
+        "category": 4,
+        "rating": 5.0,
+        "image": "ls-repostero.jpg",
+        "image_2":"cachafaz-mix.jpg"
+    }
+},
+{
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790742625403",
+        "name": "La Serenísima Colonial Dulce de Leche Traditional Recipe, 1 kg",
+        "description": "Dulce de Leche is made of three of the best things in life: Sugar, milk and vanilla, when blended perfectly they become this milky, creamy, and caramel tasty butter. COLONIAL STYLE - More milky and tastier than the classic dulce de leche. ",
+        "brand": "La Serenísima became the first in Argentina to provide nutritional facts on each bottle. The company pioneered the sale of lactose-free milk in Argentina in 1984, became the market leader in the sale of yogurt and introduced cultured milk locally, in 1988. La Serenísima also introduced large-scale organic dairy farming in Argentina, in 1994, and became the first to fortify its products with iron sulfate.",
+        "price": 12.99,
+        "category": 4,
+        "rating": 5.0,
+        "image": "ls-colonial.jpg",
+        "image_2":"cachafaz-mix.jpg"
+    }
+},
+{
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790742625404",
+        "name": "Palo Santo Mate Gourd Solid Wood with Unique Rich Aroma",
+        "description": "Genuine palo santo mate gourd. Beautiful shape with a solid feel.",
+        "brand": "Handmade",
+        "price": 12.99,
+        "category": 5,
+        "rating": 5.0,
+        "image": "mate-wood.jpg",
+        "image_2":"mate-wood-2.jpg"
+    }
+},
+{
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790742625404",
+        "name": "Silicone Mate Gourd Unique Design with Bombilla Included - Dishwasher Safe, Easy To Empty by Silicosas (Various Colors Avilable)",
+        "description": "Antibacterial, BPA free, Very easy to clean, Dishwasher safe.",
+        "brand": "Silicosas",
+        "price": 14.99,
+        "category": 5,
+        "rating": 5.0,
+        "image": "mate-sil.jpg",
+        "image_2":"mate-sil-2.jpg"
+    }
+},
+{
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790710334573",
+        "name": "CBSé Yerba Mate Hierbas Serranas (1 kg)",
+        "description": "MAKES YOUR DAY BETTER - There is nothing better than a fresh mate to make your day brighter.",
+        "brand": "Yerba Mate CBsé has a compromise with their consumers. Being the pioneer company on putting flavor in everyday Mate providing excellent products. They create flavor with an added value to share the passion of the Argentine people.",
+        "price": 9.99,
+        "category": 5,
+        "rating": 5.0,
+        "image": "cbse.png",
+        "image_2":"mate.jpg"
+    }
+},
+{
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790411001491",
+        "name": "Rosamonte Yerba Mate Traditional - Plus Envase Alumminizado (1 kg)",
+        "description": "One of the most popular yerba mate products in Argentina, Rosamonte Tradicional definitely deserves a permanent place on the shelf of every mate drinker. Don’t start with this mate though if you are new to this drink, let your palate evolve first. For experienced materos who for some reason haven’t tried it yet, Rosamonte Tradicional is a must-try yerba mate, and getting it should be your top priority. A great showcase of Argentine yerba mate at its finest",
+        "brand": "In 1936 Mr. Demetrio Hreñuk, son of Ukrainian immigrants, founds a family business with the active collaboration of his wife Catalina, dedicated at the beginning to the plantation, harvest and drying of yerba mate (Paraguayan tea). He purchases his first mill in 1966 and begins marketing yerba mate. This is the beginning of Rosamonte yerba mate.",
+        "price": 10.99,
+        "category": 5,
+        "rating": 5.0,
+        "image": "rosamonte.jpg",
+        "image_2":"mate.jpg"
+    }
+},
+{
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790387015632",
+        "name": "Plated Steel Bombilla for Mate Spring Filter with Flaps, 15 cm",
+        "description": "This plated steel bombilla is the finishing touch to add to your mate set, and an essential part of drinking mate. The stainless steel ensures washability and durability through consistent use. The bombilla, a traditional metal straw with a filter or holes on one of its ends, serves the purpose of filtering the brewed water from any mate infusion. Placed at the bottom of the gourd, it comes in many shapes and sizes: big, medium, small, slender, wide, fine or rustic. There is a bombilla for every mate. ",
+        "brand": "Handmade.",
+        "price": 7.99,
+        "category": 5,
+        "rating": 5.0,
+        "image": "bombilla.jpg",
+        "image_2":"mate.jpg"
+    }
+},
+{
+    "pk": 32,
+    "model": "products.product",
+    "fields": {
+        "upc": "7790387015621",
+        "name": "La Merced Yerba Mate Barbacuá (500 g)",
+        "description": "Wild, feral and even barbarous - this mate feels like it belongs to the nature and countryside, far away from the safe city. Barbacua method of drying contributes to the strong smoky array of flavors, taking your mind to a wilderness, where life feels way more exciting. If you ever enjoyed sitting in front of the campfire in the middle of the forest you will love this mate, but new drinkers beware - La Merced Barbacuá may be too much for unprepared palate.",
+        "brand": "La Merced.",
+        "price": 9.99,
+        "category": 5,
+        "rating": 5.0,
+        "image": "lamerced.jpg",
+        "image_2":"mate.jpg"
+    }
+}
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "pastries",
+            "friendly_name": "Pastries"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "spirits",
+            "friendly_name": "Spirits"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "wines",
+            "friendly_name": "Wines"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "sweets",
+            "friendly_name": "Sweets"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "mate",
+            "friendly_name": "Mate"
+        }
+    }
+]
