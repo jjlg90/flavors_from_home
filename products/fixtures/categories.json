@@ -3,8 +3,8 @@
         "pk": 1,
         "model": "products.category",
         "fields": {
-            "name": "pastries",
-            "friendly_name": "Pastries"
+            "name": "alfajores",
+            "friendly_name": "Alfajores"
         }
     },
     {
@@ -27,8 +27,8 @@
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "sweets",
-            "friendly_name": "Sweets"
+            "name": "dulce_de_leche",
+            "friendly_name": "Dulce de Leche"
         }
     },
     {
@@ -37,6 +37,30 @@
         "fields": {
             "name": "mate",
             "friendly_name": "Mate"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "snacks",
+            "friendly_name": "Snacks"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "fruit_jelly",
+            "friendly_name": "Fruit Jelly"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "gourds_straws",
+            "friendly_name": "Gourds & Straws"
         }
     }
 ]

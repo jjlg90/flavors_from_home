@@ -82,7 +82,7 @@
         "description": "COFFEE’S BEST FRIEND - If you love sweet things with your coffee, these little cones are the greatest companions. A soft sweet cookie, the best Dulce de Leche and dark chocolate coating.",
         "brand": "Cachafaz is a young brand of no more than 12 years old. The company started selling 'Alfajores de Maicena', but slowly made their name known by placing their classic Alfajor on the list of the best of the country. Now it is a leader brand and they expanded their products selling all different types of alfajores, cookies and Dulce de Leche.",
         "price": 9.99,
-        "category": 1,
+        "category": 6,
         "rating": 5.0,
         "image": "conito.jpg",
         "image_2":"conito-box.jpg"
@@ -157,7 +157,7 @@
         "description": "12 cookies x 18 g. DELICIOUS AND UNFORGETTABLE - Everyone has a memory related with a Tita, the best sweet treat of them all.",
         "brand": "This is the brand of delightful and quality products for the members of the family. Each cookie is directed to a different and particular family member. The principal products that are commercialized under Terrabusi are: Galletitas (Express, Variedad, Lincoln, Manón, Duquesa, Melba, Anillitos, Boca de dama, Rococo); Alfajores (Terrabusi y Tita); Bañados (Tita, Rhodesia, Snacky, Habanitos, Mini Rhodesia)",
         "price": 9.99,
-        "category": 1,
+        "category": 6,
         "rating": 5.0,
         "image": "tita.jpg",
         "image_2":"tita-box.jpg"
@@ -172,7 +172,7 @@
         "description": "12 cookies x 22 g. GREAT TASTE AND QUALITY - Crunchy wafers covered in milk chocolate filled with lemon cream.",
         "brand": "This is the brand of delightful and quality products for the members of the family. Each cookie is directed to a different and particular family member. The principal products that are commercialized under Terrabusi are: Galletitas (Express, Variedad, Lincoln, Manón, Duquesa, Melba, Anillitos, Boca de dama, Rococo); Alfajores (Terrabusi y Tita); Bañados (Tita, Rhodesia, Snacky, Habanitos, Mini Rhodesia)",
         "price": 12.99,
-        "category": 1,
+        "category": 6,
         "rating": 5.0,
         "image": "rhodesia.jpg",
         "image_2":"rhodesia-box.jpg"
@@ -322,7 +322,7 @@
         "description": "As hard as it is to describe something you can’t find anywhere else, picture a lighter, wobblier version of the Imo Yokan (Asian sweet potato jelly). Sweet and slightly earthy, the “dulce de batata” is a must for the classic Argentinean dessert “queso y dulce” (which literally means “cheese and jelly”). You can finally attempt to settle the national dispute over sweet potato jelly or quince jelly: decide which one’s best. If you have a sweet tooth, this dulce is also perfect on its own, by the slice.",
         "brand": "Esnaola is a classic argentinian brand.",
         "price": 7.99,
-        "category": 4,
+        "category": 7,
         "rating": 5.0,
         "image": "esnaola.jpg",
         "image_2":"esnaola-2.jpg"
@@ -397,7 +397,7 @@
         "description": "Genuine palo santo mate gourd. Beautiful shape with a solid feel.",
         "brand": "Handmade",
         "price": 12.99,
-        "category": 5,
+        "category": 8,
         "rating": 5.0,
         "image": "mate-wood.jpg",
         "image_2":"mate-wood-2.jpg"
@@ -412,7 +412,7 @@
         "description": "Antibacterial, BPA free, Very easy to clean, Dishwasher safe.",
         "brand": "Silicosas",
         "price": 14.99,
-        "category": 5,
+        "category": 8,
         "rating": 5.0,
         "image": "mate-sil.jpg",
         "image_2":"mate-sil-2.jpg"
@@ -457,7 +457,7 @@
         "description": "This plated steel bombilla is the finishing touch to add to your mate set, and an essential part of drinking mate. The stainless steel ensures washability and durability through consistent use. The bombilla, a traditional metal straw with a filter or holes on one of its ends, serves the purpose of filtering the brewed water from any mate infusion. Placed at the bottom of the gourd, it comes in many shapes and sizes: big, medium, small, slender, wide, fine or rustic. There is a bombilla for every mate. ",
         "brand": "Handmade.",
         "price": 7.99,
-        "category": 5,
+        "category": 8,
         "rating": 5.0,
         "image": "bombilla.jpg",
         "image_2":"mate.jpg"

@@ -20,10 +20,8 @@
                 Pastries
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="pastries-link">
-                <a href="" class="dropdown-item">Alfajores</a>
-                <a href="" class="dropdown-item">Snacks</a>
-                <a href="" class="dropdown-item">Cookies</a>
-                <a href="" class="dropdown-item">Conitos</a>
+                <a href="{% url 'products' %}?category=alfajores" class="dropdown-item">Alfajores</a>
+                <a href="{% url 'products' %}?category=snacks" class="dropdown-item">Snacks</a>
             </div>
         </li>
 
@@ -33,8 +31,8 @@
                 Spirits & Wines
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="spirits&wines-link">
-                <a href="" class="dropdown-item">Bitters and liquors</a>
-                <a href="" class="dropdown-item">Wines</a>
+                <a href="{% url 'products' %}?category=spirits" class="dropdown-item">Bitters and liquors</a>
+                <a href="{% url 'products' %}?category=wines" class="dropdown-item">Wines</a>
             </div>
         </li>
 
@@ -43,10 +41,9 @@
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sweets
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="pastries-link">
-                <a href="" class="dropdown-item">Dulce de Leche</a>
-                <a href="" class="dropdown-item">Sweet Potato Jelly</a>
-                <a href="" class="dropdown-item">Quince Jelly</a>
+            <div class="dropdown-menu border-0" aria-labelledby="sweets-link">
+                <a href="{% url 'products' %}?category=dulce_de_leche" class="dropdown-item">Dulce de Leche</a>
+                <a href="{% url 'products' %}?category=fruit_jelly" class="dropdown-item">Sweet Potato Jelly</a>
             </div>
         </li>
 
@@ -55,10 +52,9 @@
                 aria-haspopup="true" aria-expanded="false">
                 Mate
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Yerba Mate</a>
-                <a href="" class="dropdown-item">Gourds and straws</a>
-                <a href="" class="dropdown-item">Mate Kits</a>
+            <div class="dropdown-menu border-0" aria-labelledby="mate-link">
+                <a href="{% url 'products' %}?category=mate" class="dropdown-item">Yerba Mate</a>
+                <a href="{% url 'products' %}?category=gourds_straws" class="dropdown-item">Gourds and straws</a>
             </div>
         </li>
 
