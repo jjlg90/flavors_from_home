@@ -22,6 +22,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="pastries-link">
                 <a href="{% url 'products' %}?category=alfajores" class="dropdown-item">Alfajores</a>
                 <a href="{% url 'products' %}?category=snacks" class="dropdown-item">Snacks</a>
+                <a href="{% url 'products' %}?category=alfajores,snacks" class="dropdown-item">All Pastries</a>
             </div>
         </li>
 
@@ -33,6 +34,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="spirits&wines-link">
                 <a href="{% url 'products' %}?category=spirits" class="dropdown-item">Bitters and liquors</a>
                 <a href="{% url 'products' %}?category=wines" class="dropdown-item">Wines</a>
+                <a href="{% url 'products' %}?spirits,wines" class="dropdown-item">All Spirits</a>
             </div>
         </li>
 
@@ -44,6 +46,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="sweets-link">
                 <a href="{% url 'products' %}?category=dulce_de_leche" class="dropdown-item">Dulce de Leche</a>
                 <a href="{% url 'products' %}?category=fruit_jelly" class="dropdown-item">Sweet Potato Jelly</a>
+                <a href="{% url 'products' %}?category=dulce_de_leche,fruit_jelly" class="dropdown-item">All Sweets</a>
             </div>
         </li>
 
@@ -55,6 +58,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="mate-link">
                 <a href="{% url 'products' %}?category=mate" class="dropdown-item">Yerba Mate</a>
                 <a href="{% url 'products' %}?category=gourds_straws" class="dropdown-item">Gourds and straws</a>
+                <a href="{% url 'products' %}?category=mate,gourds_straws" class="dropdown-item">All Mate Products</a>
             </div>
         </li>
 
