@@ -24,6 +24,7 @@ def wishlist(request):
 
     return render(request, 'wishlist/wishlist.html', context)
 
+
 @login_required
 def add_to_wishlist(request, product_id):
     """
@@ -37,5 +38,21 @@ def add_to_wishlist(request, product_id):
     # Add product to the wishlist
     wishlist.products.add(product)
     messages.info(request, "A new product was added to your wishlist")
+
+    return redirect(request.META.get('HTTP_REFERER'))
+
+
+@login_required
+def remove_from_wishlist(request, product_id):
+    """
+    Add a product from the store to the
+    wishlist for the logged in user
+    """
+    wishlist = WishList.objects.get(user=request.user)
+    product = get_object_or_404(Product, pk=product_id)
+
+    # Remove product from the wishlist
+    wishlist.products.remove(product)
+    messages.info(request, "A product was removed from your wishlist")
 
     return redirect(request.META.get('HTTP_REFERER'))
