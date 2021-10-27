@@ -260,6 +260,132 @@ input[name='q']::placeholder {
 }
 
 
+/* --------------------------------------------------- */
+/*                       FOOTER                        */
+/* --------------------------------------------------- */
+
+footer {
+    background-color: var(--DarkAccent);
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--LightAccent);
+}
+
+.footer-h {
+    color: var(--ExtraLight);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.footer-p {
+    color: var(--ExtraLight);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* --- FOOTER LINKS --- */
+.footer a {
+    color: var(--LightAccent);
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: var(--Light)
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: var(--Accent);
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+/* --- SOCIAL MEDIA LINKS --- */
+.footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: var(--Light)
+}
+
+.footer .social-icons {
+    text-align: right
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons a {
+    background-color: var(--Light);
+    color: var(--DarkAccent);
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: var(--ExtraLight);
+    background-color: var(--Accent);
+}
+
+@media only screen and (min-width: 767px) {
+    .social-icons {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .social-icons {
+        padding-left: 2rem;
+    }
+}
+
+/* COPYRIGHT TEXT */
+.copyright-text {
+    color: var(--Light);
+}
+
+#link-external {
+    text-decoration: underline;
+    color: var(--Light);
+}
+
+#link-external:hover {
+    text-decoration: underline;
+    color: var(--Accent);
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
