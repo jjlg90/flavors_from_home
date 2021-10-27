@@ -60,7 +60,7 @@ class ProductReview(models.Model):
                              on_delete=models.CASCADE)
     title = models.CharField(max_length=254)
     content = models.TextField()
-    rating = models.IntegerField(choices=rating_selection, default=3)
+    rating = models.IntegerField(choices=rating_selection, default=0)
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
