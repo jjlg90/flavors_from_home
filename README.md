@@ -1,108 +1,215 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<h1>Flavors from Home</h1>
+<h1>Fullstack Development Milestone Project</h1>
 
-Welcome jjlg90,
+![responsive-mockup](/static/images/doc-img/responsive-mockup.png)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This project consists of a ecommerce website for company Flavors from Home; where users can browse, discover and buy traditional argentinian products in Europe. 
+Check out the [Live Project](https://wild-argentina.herokuapp.com/index)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+#### Disclaimer
+Flavors from Home online store does not exist. The creation of this project is purely educative. 
 
-## Gitpod Reminders
+## User Experience (UX)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User stories
 
-`python3 -m http.server`
+### First Time visitor
+As a First Time Visitor, I want to:
+* Be able to tell the purpose of the website.
+* Experience smooth navigation through content.
+* Read content that is relevant and concise. 
+* Browse products.
+* View a list of products to purchase.
+* Have access to product details.
+* Easily view the total of my purchases at any time
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### Returning visitor
+As a Returning Visitor, I want to:
+* Easily register for an account.
+* Receive email confirmation after registering.
+* Have a personalized user profile.
+* See new products and updates.
+* Have a personal wishlist to store products for future orders.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+### Frequent user
+As a Frequent User, I want to:
+* Quickly recover my password in case I forget it.
+* Easily log in and log out of the site.
+* Have control over my information.
+* Be able to see previous orders summaries.
+* Be able to sort products.
+* Be able to search for specific product names.
+* Rate and comment on products.
+* Easily see what I've searched for and the number of results.
+* Easily select quantity of a product when purchasing it.
+* View items to be purchased in my bag.
+* Easily enter my payment information.
+* Feel my personal and payment information is secure.
+* View an order confirmation after checkout.
+* Receive an email confirmation after checkout.
 
-Another blue button should appear to click: _Open Browser_.
+### Store owner
+As a Store Owner, I want to:
+* Be able to add new products.
+* Edit or update product details.
+* Delete products when necessary.
+  
+ ### Strategy
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ #### Project Goals 
+ To provide WILD ARGENTINA with a presentation website, where its users can can browse, discover and share experiences.
+ 
+ #### Developer Goals: 
+ To showcase an attractive, well-designed flask based python application that's easily updated and maintained.
 
-To log into the Heroku toolbelt CLI:
+### Scope 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Features
+* The project is presented in a multipage layout, based on django and controlled by python on the backend.
+Rendered templates customized with HTML5, CSS3, Javascript.
+* Fully responsive on different screen sizes.
+* It counts with a contact form.
+* Full CRUD functionality. (Create, Read, Update and Delete products)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Future Features
 
-------
+### Structure 
 
-## Release History
+#### Information
+ The content is distributed throughout several pages.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Home page:
+    * 
+* Products:
+    * 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* Product Detail:
+    * 
+ 
+* Profile:
+    * 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Wishlist:
+    * 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Bag:
+    * 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Skeleton
+For the wireframes, Figma software has been used to lay out the foundations of the website.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+[Wireframes]()
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Surface
+ The content is easy to navigate and is neatly divided in sections.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+ The colour palette is dark, looking to highlight the brightness of the images to attract attention to them. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![palette](/static/images/doc-img/colors.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The fonts are:
+* Milonga. 
+* Montserrat. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Technologies
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Languages
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-  [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-  [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-  [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-  [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Other Technologies
 
-------
+* [Heroku](https://en.wikipedia.org/wiki/Heroku)
+    * Cloud platform service.
+* [Jquery CDN](https://code.jquery.com)
+    * Javascript.
+* [W3Schools](https://www.w3schools.com/)
+    * CSS documentation.
+* [Figma:](https://figma.com/)
+    - Figma was used to create the wireframes.
+* [GitHub:](https://github.com/)
+    * Code repository.
+* [Gitpod](https://gitpod.io/)
+    * Gitpod was used as IDE and for version control. 
+* [Font Awesome:](https://fontawesome.com/)
+    * Font Awesome was used solely for social media icons in footer.
+* [Google Fonts:](https://fonts.google.com/)
+    * Google fonts was used to import "Montserrat" and "Lora" family fonts.
+* [Chrome Developer Tools:](https://developers.google.com/web/tools/chrome-devtools)
+    * Used to debug and style.
 
-## FAQ about the uptime script
+## Testing
 
-**Why have you added this script?**
+__[Click here to read testing documentation.](testing.md)__
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Deployment
 
-**How will this affect me?**
+### Forking the GitHub Repository
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jjlg90/flavors_from_home)
+2. At the top of the Repository, just above the "Settings" button on the menu, locate the "Fork" Button.
+3. You should now have a copy of the original repository in your GitHub account.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Making a Local Clone
 
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/jjlg90/flavors_from_home)
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+$ git clone https://github.com/jjlg90/flavors_from_home
 ```
 
-**Anything more?**
+7. Press Enter. Your local clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Connecting to MongoDB
+1. Log in to MongoDB.
+2. Within the "Cluster1" tab selected, click on "Connect".
+3. Select "Connect your application".
+4. Select _Python_ version 3.6 or later.
+5. Copy _connection string_ and then paste it to env.py
+6. Create an instance of PyMongo and pass the application to that instance.
+* Like:  `mongo = PyMongo(app`)
 
----
+### Heroku Deployment
 
-Happy coding!
+Preparing Local workspace for Heroku:
+1. Create *__requirements.txt__*  file.
+CLI: `pip freeze --local > requirements.txt`
+
+2. Creating *__Procfile__* file.
+Type in file `web: python app.py` and save.
+
+Create Heroku application:
+1. Log in Heroku.
+2. Click `New` button. 
+2. Select `Create a new app`.
+3. Enter the app name.
+4. Select region.
+5. Under `Settings`, __click__ `Config Vars` to add Configuration Variables from the env.py file.
+6. In your CLI install Heroku by typing `npm install -g heroku`  
+7. Select `Deploy` option.
+8. Under `Deployment method` select the __GitHub__ option.
+9. Select Automatic deploys from the main branch and select `Deploy Branch`.
+10. Click `Open App` button located in the top-right corner of your Heroku account.
+
+## Credits
+
+#### Media
+Pictures and videos were taken from the following websites.
+
+### Acknowledgements
+
+* My Mentor 
+* [Stack Overflow](https://stackoverflow.com/) helped me to find answers about structure and styling from other people's inquiries, posts and threads.
