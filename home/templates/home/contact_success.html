@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block extra_title %}
+- Contact Us: Success
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Heading-->
+<div class="container">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Contact Us</h2>
+            <hr class="w-100 mb-1">
+        </div>
+    </div>
+</div>
+<!-- Contact From Success Message-->
+<main class="container mb-5">
+    <div class="row pt-3 height-view">
+        <div class="col-12 col-md-6">
+            <img class="block-connect-img" src="">
+        </div>
+        <div class="col-12 col-md-6 mt-5">
+            <h3 class="smaller-heading">Success! Thank you for your message. We will be in contact soon.</h3>
+            <a href="{% url 'products' %}" class="btn alt-action-btn mt-3">
+                <span class="text-uppercase">Go check out the Store</span>
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock %}
