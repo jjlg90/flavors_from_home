@@ -1,17 +1,44 @@
+:root {
+    --Blue: #003049;
+    --White: #eae2b7;
+    --Red:#d62828;
+    --Orange:#f77f00;
+    --Yellow:#fcbf49;
+}
+
+.text-white {
+    color: var(--White) !important;
+}
+
+.text-yellow {
+    color: var(--Yellow) !important;
+}
+
+.center-align {
+    text-align: center;
+}
+
 html {
     height: 100%;
 }
 
 body {
-	background: url('/media/placeholder-2.png') no-repeat center center fixed;
+	background: url('/media/blue-background.png') no-repeat center center fixed;
 	background-size: cover;
     height: calc(100vh - 164px);
-    color: #000;
     font-family: "Roboto", sans-serif;
 }
 
+header {
+    background-color: var(--Blue);
+    color: #fafafa;
+}
 .milonga {
     font-family: "Milonga", sans-serif;
+}
+
+#topnav h2 {
+    text-align: center;
 }
 
 /* from Bulma */
@@ -32,38 +59,25 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: var(--Yellow);
+    color: var(--Blue);
     min-width: 260px;
+    font-weight: 800;
 }
 
-.btn-black {
-    background: black;
-    color: white;
-}
-
-
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
-}
-
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
+.btn-search {
+    background: var(--Yellow);
+    color: var(--Blue);
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
+.btn-search:hover,
+.btn-search:active,
+.btn-search:focus {
+    background: var(--Red);
+    color: var(--White);
 }
 
 .text-black {
@@ -276,15 +290,15 @@ input[name='q']::placeholder {
 /* --------------------------------------------------- */
 
 footer {
-    background-color: var(--DarkAccent);
+    background-color: var(--Blue);
     padding: 45px 0 20px;
     font-size: 15px;
     line-height: 24px;
-    color: var(--LightAccent);
+    color: var(--White);
 }
 
 .footer-h {
-    color: var(--ExtraLight);
+    color: var(--White);
     font-size: 18px;
     text-transform: uppercase;
     margin-top: 5px;
@@ -292,7 +306,7 @@ footer {
 }
 
 .footer-p {
-    color: var(--ExtraLight);
+    color: var(--White);
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -300,7 +314,7 @@ footer {
 
 /* --- FOOTER LINKS --- */
 .footer a {
-    color: var(--LightAccent);
+    color: var(--White);
     text-decoration: none;
 }
 
@@ -314,13 +328,13 @@ footer {
 }
 
 .footer-links a {
-    color: var(--Light)
+    color: var(--White);
 }
 
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-    color: var(--Accent);
+    color: var(--White);
     text-decoration: none;
 }
 
@@ -336,7 +350,7 @@ footer {
     margin-left: 6px;
     margin-right: 0;
     border-radius: 100%;
-    background-color: var(--Light)
+    background-color: var(--White)
 }
 
 .footer .social-icons {
@@ -349,8 +363,8 @@ footer {
 }
 
 .social-icons a {
-    background-color: var(--Light);
-    color: var(--DarkAccent);
+    background-color: var(--White);
+    color: var(--Blue);
     font-size: 16px;
     display: inline-block;
     line-height: 44px;
@@ -365,8 +379,8 @@ footer {
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-    color: var(--ExtraLight);
-    background-color: var(--Accent);
+    color: var(--White);
+    background-color: var(--White);
 }
 
 @media only screen and (min-width: 767px) {
