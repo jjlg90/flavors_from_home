@@ -1,13 +1,22 @@
 from django import forms
 from .widgets import CustomClearableFileInput
-from .models import Product, Category, ProductReview
+from .models import Product, Category, Reviews
 
 
-class ReviewForm(forms.ModelForm):
+class ReviewsForm(forms.ModelForm):
 
     class Meta:
-        model = ProductReview
-        exclude = ('product', 'user', 'date_added')
+        model = Reviews
+        fields = ('title', 'user_rating', 'comment')
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        #product = Product.objects.all()
+        #product_friendly_names = [(p.id, p.get_name()) for p in product]
+
+        #self.fields['product'].choices = product_friendly_names
+        for field_name, field in self.fields.items():
+            field.widget.attrs['class'] = ('rounded-2')
 
 
 class ProductForm(forms.ModelForm):

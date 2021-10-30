@@ -3,8 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category, ProductReview
-from .forms import ReviewForm, ProductForm
+from .models import Product, Category, Reviews, UserProfile
+from .forms import ReviewsForm, ProductForm
 
 
 def all_products(request):
@@ -62,11 +62,12 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
-    form = ReviewForm()
+    product.get_avg_rating()
+    reviews = Reviews.objects.filter(product=product)
 
     context = {
         'product': product,
-        'form': form,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -74,6 +75,41 @@ def product_detail(request, product_id):
 
 @login_required
 def add_review(request, product_id):
+    """ Add a review and rating for a product """
+    product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == 'POST':
+        if request.user.is_authenticated:
+            profile = UserProfile.objects.get(user=request.user)
+
+            form_data = {
+                'title': request.POST['title'],
+                'user_rating': request.POST['user_rating'],
+                'comment': request.POST['comment'],
+            }
+            print('form_data', form_data)
+            review_form = ReviewsForm(form_data)
+
+            if review_form.is_valid():
+                review_object = review_form.save(commit=False)
+                review_object.user_profile = profile
+                review_object.product = product
+                review_form.save()
+                messages.success(request, 'Your review has been added')
+                return redirect(reverse('product_detail', args=[product.id]))
+            else:
+                messages.error(request, (
+                    'Failed to add review. Please ensure the form is valid.'))
+    else:
+        review_form = ReviewsForm(instance=product)
+
+    template = 'products/add_review.html'
+    context = {
+        'form': review_form,
+        'product': product,
+    }
+
+    return render(request, template, context)
     """
     A view to allow the user to add a review to a product
     """
@@ -82,7 +118,7 @@ def add_review(request, product_id):
 
     if request.user.is_authenticated:
         if request.method == 'POST':
-            form = ReviewForm(request.POST)
+            form = ReviewsForm(request.POST)
             if form.is_valid():
                 review = form.save(commit=False)
                 review.product = product
@@ -101,39 +137,6 @@ def add_review(request, product_id):
 
 
 @login_required
-def edit_review(request, review_id):
-    """
-    A view to allow the users to edit their own review
-    """
-
-    review = get_object_or_404(ProductReview, pk=review_id)
-    product = review.product
-
-    if request.method == 'POST':
-        form = ReviewForm(request.POST, instance=review)
-        if form.is_valid():
-            form.save()
-            messages.info(request, 'Review has been changed')
-            return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(
-                request, 'Review edit failed, Please try again')
-
-    else:
-        form = ReviewForm(instance=review)
-
-    messages.info(request, 'You are editing your review')
-    template = 'products/product_detail.html'
-    context = {
-        'form': form,
-        'review': review,
-        'product': product,
-        'edit': True,
-    }
-    return render(request, template, context)
-
-
-@login_required
 def add_product(request):
     """ Add a product to the store """
 
@@ -149,7 +152,8 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, (
+                'Failed to add product. Please ensure the form is valid.'))
     else:
         form = ProductForm()
 
@@ -178,7 +182,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, (
+                'Failed to update product. Please ensure the form is valid.'))
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
