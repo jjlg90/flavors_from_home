@@ -40,18 +40,20 @@
   </head>
   <body>
     <header class="container-fluid fixed-top">
-        <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+        <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
+            <!-- Site Header -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0 milonga">Flavors from <strong>Home</strong></h2>
+                    <h2 class="logo-font my-0 milonga text-white">Flavors From <br><strong>{ Home }</strong></h2>
                 </a>
             </div>
+            <!-- Search Bar -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'products' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-black rounded-pill" type="text" name="q" placeholder="Search our site">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-search border border-black rounded-circle" type="submit">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -62,16 +64,18 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                    <!-- Wishlist -->
                     <li class="list-inline-item">
-                        <a class="text-black nav-link" href="{% url 'wishlist' %}" id="wishlist">
+                        <a class="text-white nav-link" href="{% url 'wishlist' %}" id="wishlist">
                             <div class="text-center">
-                                <div><i class="fas fa-heart fa-lg"></i></div>
+                                <div><i class="fas fa-heart fa-lg" style="color: var(--Red);"></i></div>
                                 <p class="my-0">Wishlist</p>
                             </div>
                         </a>
                     </li>
+                    <!-- Account Options -->
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-white nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fas fa-user fa-lg"></i></div>
                                 {% if request.user.is_authenticated %}
@@ -94,8 +98,9 @@
                             {% endif %}
                         </div>
                     </li>
+                    <!-- Shopping Bag -->
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
@@ -112,7 +117,8 @@
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0"></div>
         </div>
-        <div class="row bg-white">
+    <!-- Navigation -->
+        <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -121,13 +127,16 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
+        <!--
         <div id="delivery-banner" class="row text-center">
             <div class="col bg-black text-white">
                 <h4 class="logo-font my-1">Free delivery on orders over ${{ free_delivery_threshold }}!</h4>                
             </div>            
         </div>
+        -->
     </header>
 
+    <!-- Toast Messages -->
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -152,61 +161,7 @@
     {% block content %}
     {% endblock %}
 
-    <!-- Footer  -->
-    <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <!-- About section -->
-            <div class="col-sm-12 col-md-6">
-              <h3 class="footer-h">About</h3>
-              <p class="footer-p"> Hoping to make argentinian expats feel like home with some tasty treats, Flavors from Home brings argentinian products to europe for you to enjoy and share; and if you are new to them, discover our favourite flavors.
-              </p>
-            </div>
-            <!-- Categories section -->
-            <div class="col-xs-6 col-md-3">
-              <h3 class="footer-h">Categories</h3>
-              <ul class="footer-links">
-                <li><a href="{% url 'products' %}?category=alfajores">Alfajores</a></li>
-                <li><a href="{% url 'products' %}?category=snacks">Snacks</a></li>
-                <li><a href="{% url 'products' %}?category=spirits">Bitters & Liquors</a></li>
-                <li><a href="{% url 'products' %}?category=wines">Wines</a></li>
-                <li><a href="{% url 'products' %}?category=dulce_de_leche">Dulce de Leche</a></li>
-                <li><a href="{% url 'products' %}?category=fruit_jelly">Sweet Potato Jelly</a></li>
-                <li><a href="{% url 'products' %}?category=mate">Mate</a></li>
-                <li><a href="{% url 'products' %}?category=gourds_straws">Gourds & Straws</a></li>
-              </ul>
-            </div>
-            <!-- Quick Links section -->
-            <div class="col-xs-6 col-md-3">
-              <h3 class="footer-h">Quick Links</h3>
-              <ul class="footer-links">
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">FAQ</a></li>
-              </ul>
-            </div>
-          </div>
-          <hr>
-        </div>
-        <div class="container">
-          <div class="row">
-            <!-- Copyright section -->
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">&copy; 2021 JJLG
-              </p>
-            </div>
-            <!-- Social Links section -->
-            <div class="col-md-4 col-sm-6 col-xs-12 d-flex">
-              <ul class="social-icons">
-                <li><a class="twitter" target="_blank" href="https://twitter.com/" ><i class="fa fa-twitter"></i></a></li>
-                <li><a class="instagram" target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
-                <li><a class="linkedin" target="_blank" href="https://www.pinterest.com/in/"><i class="fa fa-pinterest"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </footer>
-
+    {% include 'includes/footer.html' %}
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
