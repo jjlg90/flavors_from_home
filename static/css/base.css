@@ -1,3 +1,5 @@
+/*----------------------------- Colors ---------------------------------*/
+
 :root {
     --Blue: #003049;
     --White: #eae2b7;
@@ -14,6 +16,28 @@
     color: var(--Yellow) !important;
 }
 
+.text-black {
+    color: #000 !important;
+}
+
+.text-blue {
+    color: var(--Blue) !important;
+}
+
+.bg-white {
+    background-color: var(--White) !important;
+}
+
+.bg-blue {
+    background-color: var(--Blue) !important;
+}
+
+.bg-yellow {
+    background-color: var(--Yellow) !important;
+}
+
+/*----------------------------- General ---------------------------------*/
+
 .center-align {
     text-align: center;
 }
@@ -23,7 +47,7 @@ html {
 }
 
 body {
-	background: url('/media/blue-background.png') no-repeat center center fixed;
+	background: url('/media/home_image.jpeg') no-repeat center center fixed;
 	background-size: cover;
     height: calc(100vh - 164px);
     font-family: "Roboto", sans-serif;
@@ -70,6 +94,16 @@ header {
     color: var(--Blue);
 }
 
+.fa-lg {
+    color: var(--Yellow);
+}
+
+.fa-lg:hover,
+.fa-lg:active,
+.fa-lg:focus {
+    color: var(--Red);
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -78,10 +112,6 @@ header {
 .btn-search:focus {
     background: var(--Red);
     color: var(--White);
-}
-
-.text-black {
-    color: #000 !important;
 }
 
 .border-black {
@@ -98,23 +128,42 @@ header {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: var(--White);
 	z-index: -1;
 }
 
+.product:hover {
+    background-color: var(--Blue);
+}
+
+a.category-badge > span.badge {
+    background: var(--Blue) !important;
+    color: var(--White) !important;
+}
+
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
+    background: var(--Red) !important;
+    color: var(--White) !important;
+}
+
+/*- Back to top button -*/
+
+.btt-button:hover,
+.btt-button:active,
+.btt-button:focus {
+    background: var(--Red) !important;
+    color: var(--White) !important;
 }
 
 .btt-link,
 .update-link,
 .remove-item {
+    color: var(--Blue);
     cursor: pointer;
 }
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: var(--Blue);
 }
 
 .card-img-top {
@@ -334,7 +383,7 @@ footer {
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-    color: var(--White);
+    color: var(--Yellow);
     text-decoration: none;
 }
 
@@ -380,7 +429,7 @@ footer {
 .social-icons a:focus,
 .social-icons a:hover {
     color: var(--White);
-    background-color: var(--White);
+    background-color: var(--Red);
 }
 
 @media only screen and (min-width: 767px) {

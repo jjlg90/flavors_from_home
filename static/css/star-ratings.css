@@ -12,8 +12,8 @@ or layout on the rest of the page where the rating stars are being used
 @charset "UTF-8";
 :root {
   --star-size: 1.3rem;
-  --star-color: rgb(197, 196, 196);
-  --star-background: #F39C12;
+  --star-color: #eae2b7;
+  --star-background: #fcbf49;
 }
 
 .stars {
