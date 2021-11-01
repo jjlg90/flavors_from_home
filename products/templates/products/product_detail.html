@@ -11,7 +11,8 @@
 
 {% block content %}
 <!-- Product Detail Page -->
-<div class="container-fluid">
+<div class="container-fluid bg-blue mt-2">
+    <div class="row" style="height: 3rem;"></div>
     <div class="row">
 
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
@@ -64,36 +65,30 @@
         </div>
 
         <!-- Product Details -->
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 bg-blue text-white">
             <div class="product-details-container my-5">
-                <h1 class="mb-4 pt-md-5 text-black font-weight-bold"> {{ product.name }}</h1>
+                <h1 class="mb-4 pt-md-5font-weight-bold"> {{ product.name }}</h1>
                 {% include "products/star-ratings.html" %}
-                <h2 class="text-black lead mb-2 text-left font-weight-bold">€{{ product.price }}</h2>
+                <h2 class="lead mb-2 text-left font-weight-bold">€{{ product.price }}</h2>
                 {% if product.category %}
                 <p class="small">
-                    <a class="text-muted text-black font-weight-bold"
+                    <a class="category-badge text-decoration-none"
                         href="{% url 'products' %}?category={{ product.category.name }}">
-                        <i class="fas fa-hashtag"></i> {{ product.category.friendly_name }}
+                        <span class="p-2 mt-2 badge text-blue rounded-pill border"><i class="fas fa-hashtag"></i>
+                            {{ product.category.friendly_name }}</span>
                     </a>
                 </p>
-                {% endif %}
-                <!-- Admin Edit/Delete Buttons -->
-                {% if request.user.is_superuser %}
-                <a class="btn btn-info" href="{% url 'edit_product' product.id %}">Edit</a>
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
-                    Delete
-                </button>
                 {% endif %}
                 <!-- Quantity Selection -->
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
-                        <div class="col-12">
-                            <p class="mt-3 text-black"><strong>Quantity:</strong></p>
-                            <div class="form-group w-50">
-                                <div class="input-group">
+                        <div class="col-12 text-center">
+                            <p class="mt-3 center text-white"><strong>Quantity:</strong></p>
+                            <div class="form-group">
+                                <div class="input-group text-center">
                                     <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-info" data-item_id="{{ product.id }}"
+                                        <button class="decrement-qty btn btn-danger" data-item_id="{{ product.id }}"
                                             id="decrement-qty_{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
@@ -103,7 +98,7 @@
                                     <input class="form-control qty_input" type="number" name="quantity" value="1"
                                         min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                     <div class="input-group-append">
-                                        <button class="increment-qty btn btn-info" data-item_id="{{ product.id }}"
+                                        <button class="increment-qty btn btn-success" data-item_id="{{ product.id }}"
                                             id="increment-qty_{{ product.id }}">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
@@ -115,23 +110,33 @@
                         </div>
                         <!-- Buttons -->
                         <div class="col-12 text-center">
-                            <input class="btn btn-info btn-width text-uppercase mt-5" type="submit" value="Add to Bag">
-                            {% if request.user.is_authenticated %}
-                            <a class="btn btn-info btn-width mt-3" href="{% url 'add_to_wishlist' product.id %}">
-                                <span class="text-uppercase">Save to wishlist</span>
+                            
+                            <input class="product-button bg-blue text-white border btn rounded-pill text-uppercase mt-3" type="submit" value="Add to Bag">
+
+                            <a class="product-button bg-yellow text-blue btn rounded-pill text-uppercase mt-3" href="{% url 'add_to_wishlist' product.id %}">
+                                <span>Save to wishlist</span>
                                 <span class="icon">
                                     <i class="fas fa-chevron-right"></i>
                                 </span>
                             </a>
-                            {% endif %}
-                            <a class="btn btn-light btn-width mt-3" href="{% url 'products' %}">
+
+                            <a class="product-button bg-blue text-white btn rounded-pill text-uppercase border mt-3" href="{% url 'products' %}">
                                 <span class="icon">
-                                    <i class="text-info fas fa-chevron-left"></i>
+                                    <i class="fas fa-chevron-left"></i>
                                 </span>
-                                <span class="text-uppercase text-info">Keep Shopping</span>
+                                <span>Keep Shopping</span>
                             </a>
+
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        
+                        <!-- Admin Edit/Delete Buttons -->
+                        {% if request.user.is_superuser %}
+                        <a class="product-button bg-blue text-white btn rounded-pill text-uppercase border mt-3" href="{% url 'edit_product' product.id %}">Edit</a>
+                        <button type="button" class="product-button bg-blue text-white btn rounded-pill text-uppercase border mt-3" data-toggle="modal" data-target="#exampleModal">
+                            Delete
+                        </button>
+                        {% endif %}
                     </div>
                 </form>
             </div>

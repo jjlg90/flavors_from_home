@@ -24,6 +24,10 @@
     color: var(--Blue);
 }
 
+.text-red {
+    color: var(--Red) !important;
+}
+
 .bg-white {
     background-color: var(--White) !important;
 }
@@ -34,6 +38,10 @@
 
 .bg-yellow {
     background-color: var(--Yellow);
+}
+
+.bg-red {
+    background-color: var(--Red) !important;
 }
 
 /*----------------------------- General ---------------------------------*/
