@@ -17,24 +17,25 @@
 
 {% block content %}
 <!-- Heading-->
-<div class="container">
+<div class="overlay bg-blue"></div>
+<div class="container text-white">
     <div class="row">
-        <div class="col text-center mt-3">
-            <h2 class="logo-font">Contact Us</h2>
-            <hr class="w-100 mb-1">
-        </div>
+      <div class="col text-center mt-3">
+        <h2 class="logo-font pt-5 pb-0">Contact Us</h2>
+        <hr class="w-100 mb-1">
+      </div>
     </div>
-</div>
+  </div>
 <!-- Contact From Success Message-->
-<main class="container mb-5">
+<main class="container text-white mb-5">
     <div class="row pt-3 height-view">
         <div class="col-12 col-md-6">
-            <img class="block-connect-img" src="">
+            <img class="block-connect-img" src="{{ MEDIA_URL }}success-img.jpg">
         </div>
         <div class="col-12 col-md-6 mt-5">
-            <h3 class="smaller-heading">Success! Thank you for your message. We will be in contact soon.</h3>
-            <a href="{% url 'products' %}" class="btn alt-action-btn mt-3">
-                <span class="text-uppercase">Go check out the Store</span>
+            <h3 class="smaller-heading">Thank you for your message. We will be in contact soon.</h3>
+            <a href="{% url 'products' %}" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase mt-3">
+                <span class="text-uppercase">Check out the Store</span>
             </a>
         </div>
     </div>
