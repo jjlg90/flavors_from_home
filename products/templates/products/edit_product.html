@@ -17,7 +17,6 @@
         <div class="col text-center mt-3">
             <h2 class="logo-font pt-5">Product Management</h2>
             <h5 class="text-muted pb-4">Edit a Product</h5>
-            
         </div>
     </div>
     <!-- Edit Product Form -->
@@ -37,8 +36,10 @@
                 {% endfor %}
                 <!-- Action Buttons -->
                 <div class="text-center pb-3">
-                    <a class="product-button bg-yellow text-blue btn rounded-pill text-uppercase" href="{% url 'products' %}">Cancel</a>
-                    <button class="product-button bg-yellow text-blue btn rounded-pill text-uppercase" type="submit">Update Product</button>
+                    <a class="product-button bg-yellow text-blue btn rounded-pill text-uppercase"
+                        href="{% url 'products' %}">Cancel</a>
+                    <button class="product-button bg-yellow text-blue btn rounded-pill text-uppercase"
+                        type="submit">Update Product</button>
                 </div>
             </form>
         </div>
