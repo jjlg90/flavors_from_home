@@ -11,9 +11,9 @@
 {% endblock %}
 
 {% block content %}
-    <!-- Heading-->
-    <div class="overlay bg-white"></div>
-    <div class="container text-blue mb-2">
+    <!-- Page Header -->
+    <div class="overlay bg-blue"></div>
+    <div class="container bg-white text-blue mb-2">
         <div class="row">
             <div class="col text-center mt-3">
                 <h2 class="logo-font pt-5 pb-5">Shopping Bag</h2>
@@ -26,6 +26,7 @@
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm text-blue table-borderless">
+                            <!-- Details -->
                             <thead class="text-blue">
                                 <tr>
                                     <th scope="col"></th>
@@ -38,6 +39,7 @@
 
                             {% for item in bag_items %}
                                 <tr>
+                                    <!-- Product Image -->
                                     <td class="p-3 w-25">
                                         {% if item.product.image %}
                                         <img class="w-100 card-img-top-products" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
@@ -45,6 +47,7 @@
                                         <img class="w-100 card-img-top-products" src="{{ MEDIA_URL }}no-image.jpg" alt="{{ item.product.name }}">
                                         {% endif %}
                                     </td>
+                                    <!-- Individual Product Details -->
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 small text-muted">UPC: {{ item.product.upc|upper }}</p>
@@ -53,11 +56,13 @@
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
+                                        <!-- Quantity Selector -->
                                         <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
+                                                        <!-- Decrement Quantity Button -->
                                                         <button class="decrement-qty btn btn-sm bg-yellow" 
                                                             data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                             <span class="badge rounded-cicle">
@@ -70,6 +75,7 @@
                                                         data-item_id="{{ item.item_id }}"
                                                         id="id_qty_{{ item.item_id }}">
                                                     <div class="input-group-append">
+                                                        <!-- Increment Quantity Button -->
                                                         <button class="increment-qty btn btn-sm bg-yellow"
                                                             data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                             <span class="badge rounded-cicle">
@@ -80,6 +86,7 @@
                                                 </div>
                                             </div>
                                         </form>
+                                        <!-- Action Buttons -->
                                         <a class="update-link category-badge text-decoration-none"><span class="badge badge-white rounded-pill border">Update</span></a>
                                         <a class="remove-item category-badge text-decoration-none float-right" id="remove_{{ item.item_id }}"><span class="badge rounded-pill border">Remove</span></a></a>
                                     </td>
@@ -89,6 +96,7 @@
                                 </tr>
                             {% endfor %}
                             <tr>
+                                <!-- Prices and Costs -->
                                 <td colspan="5" class="pt-5 text-right">
                                     <hr class="mt-0 pb-3">
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
@@ -103,6 +111,7 @@
                                 </td>
                             </tr>
                             <tr>
+                                <!-- Action Buttons -->
                                 <td colspan="5" class="text-right">
                                     <a href="{% url 'products' %}" class="product-button bg-blue text-white btn rounded-pill text-uppercase border">
                                         <span class="icon">
@@ -121,13 +130,14 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <p class="lead mb-5 text-center">Your bag is empty.</p>
+                    <div class="text-center pb-5">
+                    <a href="{% url 'products' %}" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
-                    </a>
+                    </a></div>
                 {% endif %}
             </div>
         </div>

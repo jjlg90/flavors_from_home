@@ -15,17 +15,17 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
+    <div class="overlay bg-blue"></div>
+    <div class="container bg-white text-blue">
+        <!-- Page Header -->
         <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Checkout</h2>
-                <hr>
+            <div class="col text-center mt-3">
+                <h2 class="logo-font pt-5 pb-5">Checkout</h2>
+                <hr class="mt-0 pb-3">
             </div>
         </div>
-
-        <div class="row">
+        <!-- Order Summary -->
+        <div class="row pt-3 pr-3">
             <div class="col-12 col-lg-6 order-lg-last mb-5">
                 <p class="text-muted">Order Summary ({{ product_count }})</p>
                 <div class="row">
@@ -39,6 +39,7 @@
                 {% for item in bag_items %}
                     <div class="row">
                         <div class="col-2 mb-1">
+                            <!-- Product Image -->
                             <a href="{% url 'product_detail' item.product.id %}">
                                 {% if item.product.image %}
                                     <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.name }}">
@@ -47,6 +48,7 @@
                                 {% endif %}
                             </a>
                         </div>
+                        <!-- Individual Product Details -->
                         <div class="col-7">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
@@ -56,8 +58,10 @@
                         </div>
                     </div>
                 {% endfor %}
-                <hr class="my-0">
-                <div class="row text-black text-right">
+
+                <hr class="my-0 mt-3 pb-3">
+                <!-- Order's Costs -->
+                <div class="row text-blue text-right">
                     <div class="col-7 offset-2">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery:</p>
@@ -71,16 +75,18 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Please fill out the form below to complete your order</p>
+                <p class="text-muted pl-3">Please fill out the form below to complete your order</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                     {% csrf_token %}
+                    <!-- User Information -->
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                        <legend class="fieldset-label small text-blue px-2 w-auto">Details</legend>
                         {{ order_form.full_name | as_crispy_field }}
                         {{ order_form.email | as_crispy_field }}
                     </fieldset>
+                    <!-- Shipping Information -->
                     <fieldset class="rounded px-3 mb-5">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
+                        <legend class="fieldset-label small text-blue px-2 w-auto">Delivery</legend>
                         {{ order_form.phone_number | as_crispy_field }}
                         {{ order_form.street_address1 | as_crispy_field }}
                         {{ order_form.street_address2 | as_crispy_field }}
@@ -101,8 +107,8 @@
 						</div>
                     </fieldset>
                     <fieldset class="px-3">
-                        <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
-                        <!-- A Stripe card element will go here -->
+                        <legend class="fieldset-label small text-blue px-2 w-auto">Payment</legend>
+                        <!-- Stripe Card Element -->
                         <div class="mb-3" id="card-element"></div>
 
                         <!-- Used to display form errors -->
@@ -112,24 +118,25 @@
                         <input type="hidden" value="{{ client_secret }}" name="client_secret">
                         
                     </fieldset>
-
-                    <div class="submit-button text-right mt-5 mb-2">                    
-						<a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
+                    <!-- Action Buttons -->
+                    <div class="submit-button text-right mt-3 mb-2 ml-3 mr-4">                    
+						<a href="{% url 'view_bag' %}" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase float-left">
 							<span class="icon">
 								<i class="fas fa-chevron-left"></i>
 							</span>
 							<span class="font-weight-bold">Adjust Bag</span>
 						</a>
-						<button id="submit-button" class="btn btn-black rounded-0">
+						<button id="submit-button" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase">
 							<span class="font-weight-bold">Complete Order</span>
 							<span class="icon">
 								<i class="fas fa-lock"></i>
 							</span>
 						</button>
-						<p class="small text-danger my-0">
+						<p class="small text-danger my-0 mt-2">
 							<span class="icon">
 								<i class="fas fa-exclamation-circle"></i>
 							</span>
+                            <!-- Grand Total -->
 							<span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
 						</p>
 					</div>
@@ -137,6 +144,7 @@
             </div>
         </div>
     </div>
+    <!-- Stripe Loading Overlay -->
     <div id="loading-overlay">
         <h1 class="text-light logo-font loading-spinner">
             <span class="icon">
