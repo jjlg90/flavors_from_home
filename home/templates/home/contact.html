@@ -1,14 +1,51 @@
-<!--Contact form-->
-<div style="margin:80px">
-    <h1>Contact</h1>
-    <h4>Contact us directly if you have any questions</h4>
-    <p>
-        Please write your name, email address and a message below if you have any questions.
-        One of our staff members will be happy to contact you directly and answer your questions as soon as possible. 
-    </p>
-    <form method="post">
-    {% csrf_token %}
-        {{form.as_p}}
-        <button type="submit">Submit</button>
-    </form>
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block extra_title %}
+- Contact Us
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col">
+    </div>
+  </div>
 </div>
+{% endblock %}
+
+{% block content %}
+<!-- Heading-->
+<div class="overlay bg-blue"></div>
+<div class="container text-white">
+  <div class="row">
+    <div class="col text-center mt-3">
+      <h2 class="logo-font pt-5 pb-0">Contact Us</h2>
+      <hr class="w-100 mb-1">
+    </div>
+  </div>
+</div>
+<!-- Contact Form-->
+<main class="container text-white">
+  <div class="row pt-2 pb-0 mb-0">
+    <div class="col-12 col-md-6">
+      <img class="block-connect-img pt-4" src="{{ MEDIA_URL }}contact-img.jpg" alt="mate time">
+    </div>
+    <div class="col-12 col-md-6">
+      <form id="contact-form" method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group mt-3">
+          <h3 class="pt-0">Get in touch</h3>
+          <p>Let's catch up over some mate!</p>
+          {{ form|crispy }}
+        </fieldset>
+        <div class="form-actions form-group mt-4 text-end">
+          <button class="shop-now-button btn btn-lg rounded-pill text-uppercase" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+<hr class="mt-5">
+{% endblock %}

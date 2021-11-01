@@ -21,7 +21,7 @@
 }
 
 .text-blue {
-    color: var(--Blue) !important;
+    color: var(--Blue);
 }
 
 .bg-white {
@@ -33,7 +33,7 @@
 }
 
 .bg-yellow {
-    background-color: var(--Yellow) !important;
+    background-color: var(--Yellow);
 }
 
 /*----------------------------- General ---------------------------------*/
@@ -109,7 +109,11 @@ header {
 .shop-now-button:focus,
 .btn-search:hover,
 .btn-search:active,
-.btn-search:focus {
+.btn-search:focus,
+.product-button:hover,
+.product-button:active,
+.product-button:focus {
+    border-color: var(--Red) !important;
     background: var(--Red);
     color: var(--White);
 }
@@ -146,6 +150,11 @@ a.category-badge > span.badge:hover {
     color: var(--White) !important;
 }
 
+.product-button {
+    min-width: 260px;
+    font-weight: 800;
+}
+
 /*- Back to top button -*/
 
 .btt-button:hover,
@@ -176,6 +185,24 @@ input[name='q']::placeholder {
     width: 100%;
     height: 20vw;
     object-fit: cover;
+}
+
+/* ----------------------- Contact ---------------------------- */
+
+
+.connect-section {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    max-width: 80%;
+}
+
+.connect-h {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.block-connect-img {
+    max-width: 90%;
 }
 
 /* ------------------------------- bootstrap toasts */
