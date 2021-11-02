@@ -55,10 +55,15 @@ html {
 }
 
 body {
-	background: url('/media/home_image.jpeg') no-repeat center center fixed;
-	background-size: cover;
-    height: calc(100vh - 164px);
+    
     font-family: "Roboto", sans-serif;
+}
+
+.bg-img {
+    background: url('/media/5472x2624px-b.jpg') no-repeat center center fixed;
+	background-size: cover;
+    height: calc(110vh - 164px);
+    background-position: 0px 35px;
 }
 
 header {
@@ -191,8 +196,17 @@ input[name='q']::placeholder {
 
 .card-img-top-products {
     width: 100%;
-    height: 20vw;
+    height: 14vw;
     object-fit: cover;
+}
+
+.card-body {
+    height: 4vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.card-footer {
+    height: 6vw;
 }
 
 /* ----------------------- Contact ---------------------------- */
@@ -379,6 +393,7 @@ footer {
     font-size: 15px;
     line-height: 24px;
     color: var(--White);
+    border-top: 2px solid var(--White);
 }
 
 .footer-h {
