@@ -68,8 +68,12 @@
         <!-- Product Details -->
         <div class="col-12 col-md-4 col-lg-4 bg-blue text-white">
             <div class="product-details-container my-4">
-                <h1 class="mb-4 pt-md-5font-weight-bold"> {{ product.name }}</h1>
-                {% include "products/star-ratings.html" %}
+                <h1 class="mb-1 pt-md-5 font-weight-bold"> {{ product.name }}</h1>
+                {% if product.get_avg_rating %}
+                    <div class="pb-5">{% include "products/star-ratings.html" %}</div>
+                {% else %}
+                    <div class="pb-5 pl-2"><strong class="text-warning">No Rating</strong></div>
+                {% endif %}
                 <h2 class="lead mb-2 text-left font-weight-bold">€{{ product.price }}</h2>
                 {% if product.category %}
                 <p class="small">
@@ -106,8 +110,8 @@
                         <div class="form-group">
                             <div class="input-group text-center">
                                 <div class="input-group-prepend">
-                                    <button class="decrement-qty btn-sm btn bg-yellow text-blue" data-item_id="{{ product.id }}"
-                                        id="decrement-qty_{{ product.id }}">
+                                    <button class="decrement-qty btn-sm btn bg-yellow text-blue"
+                                        data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                         <span class="icon">
                                             <i class="fas fa-minus"></i>
                                         </span>
@@ -116,8 +120,8 @@
                                 <input class="form-control qty_input" type="number" name="quantity" value="1" min="1"
                                     max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                                 <div class="input-group-append">
-                                    <button class="increment-qty btn-sm btn bg-yellow text-blue" data-item_id="{{ product.id }}"
-                                        id="increment-qty_{{ product.id }}">
+                                    <button class="increment-qty btn-sm btn bg-yellow text-blue"
+                                        data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                         <span class="icon">
                                             <i class="fas fa-plus"></i>
                                         </span>
@@ -176,20 +180,20 @@
                     <div class="row pb-0">
                         <div class="col-xs-none col-md-2"></div>
                         <div class="col-sm-12 col-md-4 text-center">
-                        <p class="mt-5">Read the reviews for this product from users below:</p>
-                    </div>
-                        {% if request.user.is_authenticated %}
+                            <p class="mt-5">Read the reviews for this product from users below:</p>
+                        </div>
                         <div class="col-sm-12 col-md-4 text-right">
-                            <a class=" mt-5 product-button bg-blue text-white btn rounded-pill text-uppercase border" href="{% url 'add_review' product.id %}">Add
+                            <a class=" mt-5 product-button bg-blue text-white btn rounded-pill text-uppercase border"
+                                href="{% url 'add_review' product.id %}">Add
                                 Review</a>
                         </div>
                         <div class="col-xs-none col-md-1"></div>
-                        {% endif %}
                         <div class="col-xs-none col-md-2"></div>
                     </div>
                     {% for review in reviews %}
                     <br>
-                    <h6 class="text-center text-white text-uppercase pb-2">{{ review.title }}<small> by {{ review.user_profile.user }}</small></h6>
+                    <h6 class="text-center text-white text-uppercase pb-2">{{ review.title }}<small> by
+                            {{ review.user_profile.user }}</small></h6>
                     <table class="table text-white text-center table-bordered">
                         <thead>
                             <tr>
@@ -243,7 +247,7 @@
     </div>
 </div>
 <!-- Back To Top Button -->
-<div class="btt-button shadow-sm rounded-0 mt-3 bg-yellow">
+<div class="btt-button shadow-sm rounded-0 mt-4 bg-yellow">
     <a class="btt-link d-flex h-100">
         <i class="fas fa-arrow-up mx-auto my-auto"></i>
     </a>
