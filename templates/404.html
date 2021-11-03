@@ -1,27 +1,31 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block page_header %}
-	<div class="container header-container">
-		<div class="row">
-			<div class="col"></div>
-		</div>
-	</div>
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
 {% endblock %}
 
 {% block content %}
-    <div class="container-fluid large-container">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h1 class="hero-font text-uppercase">Ooops! You seemed to have taken a wrong turn</h1>
-                <hr class="w-50 mb-5">
-                <a class="btn btn-light btn-lg  mt-5" href="{% url 'home' %}">
-                    <span class="icon">
-                        <i class="text-info fas fa-chevron-left"></i>
-                    </span>
-                    <span class="text-uppercase font-weight-bold text-info">Home</span>
-                </a>
+    <!-- Home Banner -->
+    <div class="bg-img">
+    <div class="container h-100">
+        <div class="row h-100 pt-5">
+            <div class="col-7 col-md-6 my-auto pl-5 text-left">
+				<h6 class="logo-font text-white font-weight-bold">Woops,<br/> seems like you have found an</h6>
+                <h1 class="display-4 milonga logo-font text-center-align text-white font-weight-bold">
+                    ERROR 404</span>  <br>
+                </h1>
+                <div class="my-5 pl-5">
+                    <h4>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-pill text-uppercase py-3">Get back to the shop!</a>
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
