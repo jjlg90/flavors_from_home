@@ -257,7 +257,15 @@
 {% block postloadjs %}
 {{ block.super }}
 <script>
+
+    // Product Image Carousel
     $('.carousel').carousel()
+
+    // Back To Top Button
+    $('.btt-link').click(function(e) {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+		})
+        
 </script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}

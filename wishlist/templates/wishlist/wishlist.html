@@ -63,7 +63,7 @@
 				</div>
 			</div>
 		</div>		
-
+		
 	{% empty %}
 	<!-- Empty Wishlist -->
 	<p class="lead mb-5 text-center">Your wishlist is empty.</p>
@@ -76,4 +76,22 @@
 	</a></div>
 	{% endfor %}	
 	</div>
+	<!-- Back To Top Button -->
+    <div class="btt-button shadow-sm rounded-0 bg-yellow">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up mx-auto my-auto"></i>
+        </a>	
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+<script type="text/javascript">
+    // Back To Top Button
+		$('.btt-link').click(function(e) {
+			window.scrollTo({top: 0, behavior: 'smooth'});
+		})
+	</script>
+
 {% endblock %}
