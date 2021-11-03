@@ -19,7 +19,7 @@
                 <!-- Category Name -->
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge rounded-pill border">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge rounded-pill border"><i class="fas fa-hashtag"></i> {{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
                 <hr class="pb-3 mt-4">

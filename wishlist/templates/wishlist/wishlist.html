@@ -10,18 +10,21 @@
 {% endblock %}
 
 {% block content %}
-	<!-- User WishList Page -->
-	<div class="container-fluid large-container">
+	<!-- Page Header -->
+	<div class="overlay bg-blue"></div>
+	<div class="container bg-white text-blue mb-2">
 		<div class="row">
             <div class="col text-center mt-3">
-                <h1 class="font-weight-bold milonga text-uppercase mt-5">Your Wish List</h1>
-                <hr class="w-50 mb-5">
+                <h2 class="logo-font pt-5 pb-5">Wishlist</h2>
+                <hr class="mt-0 pb-3">
             </div>
         </div>
 	<!-- User WishList Items -->
 	{% for product in wishlist.products.all %}
-		<div class="row justify-content-center">
-			<div class="col-12 col-md-6 col-lg-3">
+
+		<div class="row">
+			<!-- Product Image -->
+			<div class="col-12 col-md-6">
 				<div class="image-container mt-5">
 					{% if product.image %}
 						<a href="{% url 'product_detail' product.id %}">
@@ -34,43 +37,43 @@
 					{% endif %}
 				</div>
 			</div>
-			<div class="col-12 col-md-6 col-lg-4">
+			<!-- Product Details -->
+			<div class="col-12 col-md-6">
 				<div class="products-detail-container my-5">
 					<h3 class="mb-4 pt-md-5 text-black font-weight-bold"> {{ product.name }}</h3>
 					<h4 class="text-black lead mb-2 text-left font-weight-bold">£{{ product.price }}</h4>
 					{% if product.category %}
 					<p class="small">
-						<a class="text-muted text-black font-weight-bold"
-							href="{% url 'products' %}?category={{ product.category.name }}">
+						<a class="category-badge text-decoration-none"
+							href="{% url 'products' %}?category={{ product.category.name }}"><span  class="p-2 mt-2 badge rounded-pill border">
 							<i class="fas fa-hashtag"></i> {{ product.category.friendly_name }}
+						</span>
 						</a>
 					</p>
 					{% endif %}
 				</div>
-				<!-- Buttons -->
+				<!-- Action Buttons -->
 				<div class="text-center">
-					<a class="btn btn-info btn-width mt-3" href="{% url 'product_detail' product.id %}">
+					<a class="product-button bg-yellow text-blue btn rounded-pill text-uppercase" href="{% url 'product_detail' product.id %}">
 						<span class="text-uppercase font-weight-bold">Product Details</span>
 					</a>
-					<a class="btn btn-info btn-width mt-3" href="{% url 'remove_from_wishlist' product.id %}">
+					<a class="product-button bg-blue text-white btn rounded-pill text-uppercase border" href="{% url 'remove_from_wishlist' product.id %}">
 						<span class="text-uppercase font-weight-bold">Remove from wishlist</span>
 					</a>
 				</div>
 			</div>
 		</div>		
+
 	{% empty %}
-		<div class="row justify-content-center">
-			<!-- Wishlist Page "if" empty -->
-			<div class="text-center mt-3">
-				<h3 class="text-uppercase">You have no items in your wishlist</h3>
-				<a class="btn btn-light btn-lg mt-5" href="{% url 'products' %}">
-					<span class="icon">
-						<i class="text-info fas fa-chevron-left"></i>
-					</span>
-					<span class="text-uppercase font-weight-bold text-info">Keep Shopping</span>
-				</a>
-			</div>
-		</div>
+	<!-- Empty Wishlist -->
+	<p class="lead mb-5 text-center">Your wishlist is empty.</p>
+	<div class="text-center pb-5">
+	<a href="{% url 'products' %}" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase">
+		<span class="icon">
+			<i class="fas fa-chevron-left"></i>
+		</span>
+		<span class="text-uppercase">Keep Shopping</span>
+	</a></div>
 	{% endfor %}	
 	</div>
 {% endblock %}
