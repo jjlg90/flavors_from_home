@@ -133,10 +133,10 @@
                     <!-- Action Buttons -->
                     <div class="col-12 text-center">
 
-                        <input class="product-button bg-blue text-white border btn rounded-pill text-uppercase mt-3"
+                        <input class="primary-button btn rounded-pill mt-3"
                             type="submit" value="Add to Bag">
 
-                        <a class="product-button bg-yellow text-blue btn rounded-pill text-uppercase mt-3"
+                        <a class="secondary-button btn rounded-pill text-uppercase mt-3"
                             href="{% url 'add_to_wishlist' product.id %}">
                             <span>Save to wishlist</span>
                             <span class="icon">
@@ -144,7 +144,7 @@
                             </span>
                         </a>
 
-                        <a class="product-button bg-blue text-white btn rounded-pill text-uppercase border mt-3"
+                        <a class="secondary-button btn rounded-pill mt-3"
                             href="{% url 'products' %}">
                             <span class="icon">
                                 <i class="fas fa-chevron-left"></i>
@@ -154,10 +154,10 @@
 
                         <!-- Admin Edit/Delete Buttons -->
                         {% if request.user.is_superuser %}
-                        <a class="product-button bg-blue text-white btn rounded-pill text-uppercase border mt-3"
+                        <a class="primary-button btn rounded-pill mt-3"
                             href="{% url 'edit_product' product.id %}">Edit</a>
                         <button type="button"
-                            class="product-button bg-blue text-white btn rounded-pill text-uppercase border mt-3"
+                            class="delete-button btn rounded-pill mt-3"
                             data-toggle="modal" data-target="#exampleModal">
                             Delete
                         </button>
@@ -183,7 +183,7 @@
                             <p class="mt-5">Read the reviews for this product from users below:</p>
                         </div>
                         <div class="col-sm-12 col-md-4 text-right">
-                            <a class=" mt-5 product-button bg-blue text-white btn rounded-pill text-uppercase border"
+                            <a class=" mt-5 primary-button btn rounded-pill"
                                 href="{% url 'add_review' product.id %}">Add
                                 Review</a>
                         </div>
@@ -226,9 +226,9 @@
 
 </div>
 <!-- Delete Product Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
+<div class="modal fade text-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+    <div class="modal-dialog text-center">
+        <div class="modal-content bg-blue">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -240,7 +240,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                 <a class="btn btn-danger" href="{% url 'delete_product' product.id %}">Delete</a>
             </div>
         </div>

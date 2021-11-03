@@ -54,10 +54,10 @@
 				</div>
 				<!-- Action Buttons -->
 				<div class="text-center">
-					<a class="product-button bg-yellow text-blue btn rounded-pill text-uppercase" href="{% url 'product_detail' product.id %}">
+					<a class="primary-button btn rounded-pill" href="{% url 'product_detail' product.id %}">
 						<span class="text-uppercase font-weight-bold">Product Details</span>
 					</a>
-					<a class="product-button bg-blue text-white btn rounded-pill text-uppercase border" href="{% url 'remove_from_wishlist' product.id %}">
+					<a class="secondary-button btn rounded-pill float-left" href="{% url 'remove_from_wishlist' product.id %}">
 						<span class="text-uppercase font-weight-bold">Remove from wishlist</span>
 					</a>
 				</div>
@@ -68,7 +68,7 @@
 	<!-- Empty Wishlist -->
 	<p class="lead mb-5 text-center">Your wishlist is empty.</p>
 	<div class="text-center pb-5">
-	<a href="{% url 'products' %}" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase">
+	<a href="{% url 'products' %}" class="primary-button btn rounded-pill">
 		<span class="icon">
 			<i class="fas fa-chevron-left"></i>
 		</span>

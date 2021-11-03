@@ -3,10 +3,12 @@
 :root {
     --Blue: #003049;
     --White: #eae2b7;
-    --Red:#d62828;
-    --Orange:#f77f00;
-    --Yellow:#fcbf49;
+    --Red: #d62828;
+    --Orange: #f77f00;
+    --Yellow: #fcbf49;
 }
+
+/*-- Text Colors --*/
 
 .text-white {
     color: var(--White) !important;
@@ -28,6 +30,8 @@
     color: var(--Red) !important;
 }
 
+/*-- Background Colors --*/
+
 .bg-white {
     background-color: var(--White) !important;
 }
@@ -44,6 +48,17 @@
     background-color: var(--Red) !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
+/*-- Border Colors --*/
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+
 /*----------------------------- General ---------------------------------*/
 
 .center-align {
@@ -55,13 +70,13 @@ html {
 }
 
 body {
-    
+
     font-family: "Roboto", sans-serif;
 }
 
 .bg-img {
     background: url('/media/5472x2624px-b.jpg') no-repeat center center fixed;
-	background-size: cover;
+    background-size: cover;
     height: calc(110vh - 164px);
     background-position: 0px 35px;
 }
@@ -70,6 +85,7 @@ header {
     background-color: var(--Blue);
     color: #fafafa;
 }
+
 .milonga {
     font-family: "Milonga", sans-serif;
 }
@@ -95,17 +111,108 @@ header {
     width: fit-content;
 }
 
-.shop-now-button {
+
+
+/*------------------------------- Buttons ---------------------------------------*/
+
+.primary-button {
+    text-transform: uppercase;
     background: var(--Yellow);
     color: var(--Blue);
     min-width: 260px;
     font-weight: 800;
+    transition: all 0.35s ease-in-out;
+}
+
+.secondary-button {
+    text-transform: uppercase;
+    background: var(--Blue);
+    color: var(--White);
+    min-width: 260px;
+    font-weight: 800;
+    border: 1px solid var(--White);
+    transition: all 0.35s ease-in-out;
+}
+
+.delete-button {
+    text-transform: uppercase;
+    background: var(--Red);
+    color: var(--White);
+    min-width: 260px;
+    font-weight: 800;
+    transition: all 0.35s ease-in-out;
 }
 
 .btn-search {
     background: var(--Yellow);
     color: var(--Blue);
+    transition: all 0.35s ease-in-out;
 }
+
+.primary-button:hover,
+.primary-button:active,
+.primary-button:focus,
+.secondary-button:hover,
+.secondary-button:active,
+.secondary-button:focus,
+.btn-search:hover,
+.btn-search:active,
+.btn-search:focus {
+    border-color: var(--Red) !important;
+    background: var(--Red) !important;
+    color: var(--White) !important;
+    transition: all 0.35s ease-in-out;
+}
+
+a.category-badge>span.badge {
+    background: var(--Blue) !important;
+    color: var(--White) !important;
+    transition: all 0.35s ease-in-out;
+}
+
+a.category-badge>span.badge:hover {
+    background: var(--Red) !important;
+    color: var(--White) !important;
+    transition: all 0.35s ease-in-out;
+}
+
+/*-- Back To Top Button --*/
+
+.btt-button:hover,
+.btt-button:active,
+.btt-button:focus {
+    background: var(--Red) !important;
+    color: var(--White) !important;
+    transition: all 0.35s ease-in-out;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    color: var(--Blue);
+    cursor: pointer;
+    transition: all 0.35s ease-in-out;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn-file input[type="file"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
 
 .fa-lg {
     color: var(--Yellow);
@@ -117,72 +224,27 @@ header {
     color: var(--Red);
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-search:hover,
-.btn-search:active,
-.btn-search:focus,
-.product-button:hover,
-.product-button:active,
-.product-button:focus {
-    border-color: var(--Red) !important;
-    background: var(--Red) !important;
-    color: var(--White) !important;
-}
 
-.border-black {
-    border: 1px solid black !important;
-}
 
-.bg-black {
-    background: #000 !important;
-}
+
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: var(--White);
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: var(--White);
+    z-index: -1;
 }
 
 .product:hover {
     background-color: var(--Blue);
 }
 
-a.category-badge > span.badge {
-    background: var(--Blue) !important;
-    color: var(--White) !important;
-}
 
-a.category-badge > span.badge:hover {
-    background: var(--Red) !important;
-    color: var(--White) !important;
-}
 
-.product-button {
-    min-width: 260px;
-    font-weight: 800;
-}
 
-/*- Back to top button -*/
-
-.btt-button:hover,
-.btt-button:active,
-.btt-button:focus {
-    background: var(--Red) !important;
-    color: var(--White) !important;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    color: var(--Blue);
-    cursor: pointer;
-}
 
 input[name='q']::placeholder {
     color: var(--Blue);
@@ -205,6 +267,7 @@ input[name='q']::placeholder {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 .card-footer {
     height: 6vw;
 }
@@ -246,10 +309,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -302,8 +365,10 @@ input[name='q']::placeholder {
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content label:not([for='id_remember']) {
@@ -316,8 +381,8 @@ input[name='q']::placeholder {
 
 
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
@@ -331,29 +396,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
-}
-
-
-/* Product Form */
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-file input[type="file"] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    opacity: 0;
-    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .custom-checkbox .custom-control-label::before {
@@ -500,32 +543,32 @@ footer {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
     .container {
-      max-width: 80%;
+        max-width: 80%;
     }
-  }
-  
-  /* fixed top navbar only on medium and up */
-  @media (min-width: 992px) {
-      .fixed-top-desktop-only {
-          position: fixed;
-          top: 0;
-          right: 0;
-          left: 0;
-          z-index: 1030;
-      }
-  
-      .header-container {
-          padding-top: 164px;
-      }
-  }
-  
-  /* pad the top a bit when navbar is collapsed on mobile */
-  @media (max-width: 991px) {
-      .header-container {
-          padding-top: 116px;
-      }
-  
-      body {
-          height: calc(100vh - 116px);
-      }
-  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}

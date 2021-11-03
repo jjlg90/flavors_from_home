@@ -113,13 +113,13 @@
                             <tr>
                                 <!-- Action Buttons -->
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="product-button bg-blue text-white btn rounded-pill text-uppercase border">
+                                    <a href="{% url 'products' %}" class="secondary-button btn rounded-pill">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="{% url 'checkout' %}" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase">
+                                    <a href="{% url 'checkout' %}" class="primary-button btn rounded-pill">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
@@ -132,7 +132,7 @@
                 {% else %}
                     <p class="lead mb-5 text-center">Your bag is empty.</p>
                     <div class="text-center pb-5">
-                    <a href="{% url 'products' %}" class="product-button bg-yellow text-blue btn rounded-pill text-uppercase">
+                    <a href="{% url 'products' %}" class="primary-button btn rounded-pill">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
