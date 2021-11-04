@@ -14,9 +14,9 @@
 <div class="container bg-white text-blue">
     <!-- Page Header -->
     <div class="row">
-        <div class="col text-center mt-3">
-            <h2 class="logo-font pt-5">Add a Review</h2>
-            <h5 class="text-muted pb-4">Let us know your experience</h5>
+        <div class="col text-center mt-md-3">
+            <h2 class="logo-font pt-md-4 pt-3 pb-md-4">Add a Review</h2>
+            <h5 class="text-muted pb-2">Let us know your experience</h5>
         </div>
     </div>
     <!-- Add Review Form -->
@@ -33,8 +33,8 @@
                         {% endfor %}
                 <!-- Action Buttons -->
                 <div class="text-center pb-3">
-                    <a class="product-button bg-yellow text-blue btn rounded-pill text-uppercase" href="{% url 'products' %}">Cancel</a>
-                    <button class="product-button bg-yellow text-blue btn rounded-pill text-uppercase" type="submit">Add Review</button>
+                    <a class="secondary-button btn rounded-pill mt-3" href="{% url 'products' %}">Cancel</a>
+                    <button class="primary-button btn rounded-pill mt-3" type="submit">Add Review</button>
                 </div>
             </form>
         </div>

@@ -12,10 +12,10 @@
 {% block content %}
     <!-- Page Header -->
     <div class="overlay bg-blue"></div>
-    <div class="container-fluid bg-white">
+    <div class="container-fluid bg-white text-blue">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font pt-5">Products</h2>
+            <div class="col text-center mt-md-3">
+                <h2 class="logo-font pt-md-4 pt-3 pb-md-4">Products</h2>
                 <!-- Category Name -->
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
@@ -61,11 +61,11 @@
                             <div class="card h-100 border-0">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top-products img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top-products img-fluid" src="{{ MEDIA_URL }}no-image.jpg" alt="{{ product.name }}">
+                                    <img class="img-fluid" src="{{ MEDIA_URL }}no-image.jpg" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
                                 <div class="card-body bg-blue text-white pb-0">

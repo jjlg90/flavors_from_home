@@ -572,9 +572,17 @@ footer {
     }
 
     .primary-button,
-    .secondary-button {
+    .secondary-button,
+    .delete-button {
         min-width: 130px;
     }
+
+    
+    .p-name,
+    .pd-container h2 {
+        font-size: 1.5rem;
+    }
+
     .nav-link {
         padding: 0.15rem;
     }
@@ -587,6 +595,10 @@ footer {
         padding: .6rem .6rem;
         font-size: .7rem;
         background-color: var(--yellow);
+    }
+
+    .logo-font {
+        font-size: 1.7rem;
     }
 
     #delivery-banner h6 {
@@ -614,5 +626,5 @@ footer {
     .bg-img h1 {
         font-size: 1.7rem;
     }
-    
+
 }
