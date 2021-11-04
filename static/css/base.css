@@ -270,10 +270,6 @@ input[name='q']::placeholder {
     padding-bottom: 20px;
 }
 
-.block-connect-img {
-    max-width: 90%;
-}
-
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
