@@ -29,12 +29,12 @@
                     <div class="carousel-item active">
                         {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid d-block w-100" src="{{ product.image.url }}"
+                            <img class="img-fluid rounded d-block w-100" src="{{ product.image.url }}"
                                 alt=" {{ product.name }}">
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid d-block w-100" src="{{ MEDIA_URL }}no-image.jpg"
+                            <img class="img-fluid rounded d-block w-100" src="{{ MEDIA_URL }}no-image.jpg"
                                 alt=" {{ product.name }}">
                         </a>
                         {% endif %}
@@ -42,12 +42,12 @@
                     <div class="carousel-item">
                         {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid d-block w-100" src="{{ product.image_2.url }}"
+                            <img class="img-fluid rounded d-block w-100" src="{{ product.image_2.url }}"
                                 alt=" {{ product.name }}">
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid d-block w-100" src="{{ MEDIA_URL }}no-image.jpg"
+                            <img class="img-fluid rounded d-block w-100" src="{{ MEDIA_URL }}no-image.jpg"
                                 alt=" {{ product.name }}">
                         </a>
                         {% endif %}

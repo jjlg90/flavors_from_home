@@ -28,11 +28,11 @@
 				<div class="image-container mt-5">
 					{% if product.image %}
 						<a href="{% url 'product_detail' product.id %}">
-							<img class="card-img-top" src="{{ product.image.url }}" alt=" {{ product.name }}">
+							<img class="img-fluid rounded d-block w-100" src="{{ product.image.url }}" alt=" {{ product.name }}">
 						</a>
 					{% else %}
 						<a href="{% url 'product_detail' product.id %}">
-							<img class="card-img-top" src="{{ MEDIA_URL }}noimage.png " alt=" {{ product.name }}">
+							<img class="img-fluid rounded d-block w-100" src="{{ MEDIA_URL }}noimage.png " alt=" {{ product.name }}">
 						</a>
 					{% endif %}
 				</div>
@@ -40,8 +40,8 @@
 			<!-- Product Details -->
 			<div class="col-12 col-md-6">
 				<div class="products-detail-container my-5">
-					<h3 class="mb-4 pt-md-5 text-black font-weight-bold"> {{ product.name }}</h3>
-					<h4 class="text-black lead mb-2 text-left font-weight-bold">£{{ product.price }}</h4>
+					<h3 class="mb-4 pt-md-5 text-blue font-weight-bold"> {{ product.name }}</h3>
+					<h4 class="text-blue lead mb-2 text-left font-weight-bold">£{{ product.price }}</h4>
 					{% if product.category %}
 					<p class="small">
 						<a class="category-badge text-decoration-none"
