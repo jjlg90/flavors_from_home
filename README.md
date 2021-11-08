@@ -187,7 +187,7 @@ For the low fidelity wireframes, Figma software has been used to lay out the fou
 ![palette](/media/palette.png)
 
 The fonts are:
-* Milonga. Stylized as the traditional "fileteado porteño", this font is a homage to the silver river culture. Thousands of signs with this calygraphic style can be found in the streets of Buenos Aires.
+* Milonga. Stylized as the traditional "fileteado porteño", this font is a homage to the silver river culture. Thousands of signs with this calligraphic style can be found in the streets of Buenos Aires.
 * Montserrat. A more traditional font to improve readability of content.
 
 <hr>
@@ -279,7 +279,7 @@ While you are still in the terminal, type pip3 install -r requirements.txt, this
 pip3 install -r requirements.txt
 ```
 
-#### Setup an enviroment for variables
+#### Set up an enviroment for variables
 You now need to set up the database with environment variables. Create a file titled env.py and make sure it is placed in the of this file structure, on the same level as the app.py file. You can also add these in your workspace variable section. 
 
 Option 1: Env.py file:
