@@ -1,5 +1,4 @@
 from django.db import models
-from django.contrib.auth.models import User
 from profiles.models import UserProfile
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils import timezone
@@ -39,9 +38,10 @@ class Product(models.Model):
 
     def get_avg_rating(self):
         try:
-            rating = Reviews.objects.filter(product=self.pk).aggregate(Avg('user_rating'))
+            rating = Reviews.objects.filter(
+                product=self.pk).aggregate(Avg('user_rating'))
             rating = rating['user_rating__avg']
-        except:
+        except rating.NoRating:
             rating = 0
         return rating
 

@@ -463,6 +463,8 @@ ___
 
 * Home Banner created by artist Romina Storino [Check out her Instagram!](https://www.instagram.com/rominastorino_filete/)
 
+* Boutique Ado project, by Code Institute. Followed walkthrough to prevent errors. The code served as base structure for this project.
+
 * Concept, images and descriptions were taken form [Pampa Direct](https://pampadirect.com/), an american online retailer.
 
 * From Slack, queries by users Eldowling and Harry-Leepz saved me a lot of development time.
