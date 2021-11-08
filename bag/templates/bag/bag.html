@@ -44,8 +44,8 @@
                     <div class="col-12 col-sm-6 order-sm-last">
                         {% include 'bag/product-info.html' %}</div>
                     <div class="col-12 col-sm-6 mb-2">
-                        <p>Price: ${{ item.product.price }}</p>
-                        <p><strong>Subtotal:</strong> ${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        <p>Price: €{{ item.product.price }}</p>
+                        <p><strong>Subtotal:</strong> €{{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                     <div class="col-12 col-sm-6 mb-2">
                         {% include 'bag/quantity-form.html' %}
@@ -56,9 +56,8 @@
                         <hr>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-
-            {% endfor %}
 
 
             <div class="table-responsive rounded d-none d-md-block">
@@ -86,14 +85,14 @@
                             <p class="my-0 small text-muted">UPC: {{ item.product.upc|upper }}</p>
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price }}</p>
+                            <p class="my-0">€{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
                             <!-- Quantity Selector -->
                             {% include 'bag/quantity-form.html' %}
                         </td>
                         <td class="py-3">
-                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                            <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -117,13 +116,16 @@
             {% else %}
 
             <p class="lead mb-5 text-center">Your bag is empty.</p>
+
             <div class="text-center pb-5">
                 <a href="{% url 'products' %}" class="primary-button btn rounded-pill">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>
                     <span class="text-uppercase">Keep Shopping</span>
-                </a></div>
+                </a>
+            </div>
+
             {% endif %}
         </div>
     </div>

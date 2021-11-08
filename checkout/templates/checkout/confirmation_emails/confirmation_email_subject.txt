@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Flavors from Home Confirmation for Order Number {{ order.order_number }}
