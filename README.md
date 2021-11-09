@@ -159,9 +159,7 @@ Navbar collapses into a burger button in small resolutions.
     * Simple log in form where the user can enter either their username or their email address and their password.
     * The user will receive validation or error feedback when they enter information in the input field.
     * Link to registration page if user does not have an account.
-- The page where users can log in to the website and access the Profile page to see their user info, delivery info and order history
-- The form with built-in functionality is created with the Django Allauth package.
-
+    
 * Registration Page
     * Simple registration form, where the user can input a username, email address and password.
     * Link to login page if user have an account.

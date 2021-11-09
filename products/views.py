@@ -206,9 +206,6 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     # Used to store the products reviews
-    reviews = product.reviews.all()
     product.delete()
-    # Delete reviews after product is deleted
-    reviews.delete()
     messages.success(request, 'Product deleted successfully')
     return redirect(reverse('products'))
