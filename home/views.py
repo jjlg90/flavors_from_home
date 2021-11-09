@@ -29,7 +29,7 @@ def contact(request):
             try:
                 send_mail(
                     subject, message, body['email'], [
-                        'email'])
+                        'flavorsfromhomebv@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
 
