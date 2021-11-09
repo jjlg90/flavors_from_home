@@ -38,7 +38,7 @@ As a Returning Visitor, I want to:
 As a Frequent User, I want to:
 * Quickly recover my password in case I forget it.
 * Easily log in and log out of the site.
-* Have control over my information.
+* Have control over my shipping information. (CRUD)
 * Be able to see previous orders summaries.
 * Be able to sort products.
 * Be able to search for specific product names.
@@ -177,12 +177,14 @@ For the low fidelity wireframes, Figma software has been used to lay out the fou
 * [Tablet Wireframes](https://www.figma.com/file/wkdMlD0Exy6eeNVUAHff4y/FLAVORS-TABLET?node-id=0%3A1)
 * [Desktop Wireframes](https://www.figma.com/file/x6ghJZi3aYCT4i1lB1MjAc/FLAVORS-DESKTOP?node-id=0%3A1)
 
+### Relational Database Schema
+* ![Database](/media/relational-database-schema.png)
 ### Surface
 
 <hr>
 
 #### Color Palette
-![palette](/media/palette.png)
+* ![palette](/media/palette.png)
 
 The fonts are:
 * Milonga. Stylized as the traditional "fileteado porteño", this font is a homage to the silver river culture. Thousands of signs with this calligraphic style can be found in the streets of Buenos Aires.

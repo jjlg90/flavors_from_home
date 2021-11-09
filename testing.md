@@ -45,8 +45,8 @@ As a Frequent User, I want to:
     * In the loggin page, users will be able to see the button "Forgot Password?" They will be ask to fill the email field and will receive a password reset email with a link to the password reset page.
 * Easily log in and log out of the site.
     * In the account dropdown user will be able to use this functionality.
-* Have control over my information.
-    * Users can update their shipping information in their profiles.
+* * Have control over my shipping information. (CRUD)
+    * Users can update or erase their shipping information in their profiles.
 * Be able to see previous orders summaries.
     * Users can see their order history in their profiles.
 * Be able to sort products.
@@ -95,16 +95,16 @@ As a Store Owner, I want to:
 * Clicked header inside burger menu to ensure that it redirects to home page. (mobile) - Check
 * Links in each subcategory redirects to products/category - Check
 
-![home-html.png](/media/home-html.png)
+* ![home-html.png](/media/home-html.png)
 
 * Links in categories footer redirects to products/category - Check
 * Contact link in footer redirects to contact.html - Check
 * Social media links redirects to their respective websites - Check
-![footer-html.png](/media/footer-html.png)
+* ![footer-html.png](/media/footer-html.png)
 
 * Tested search bar, displaying number of results and query - Check
 
-![query.png](/media/query.png)
+* ![query.png](/media/query.png)
 
 ### Products
 
@@ -112,27 +112,25 @@ As a Store Owner, I want to:
 * Clicked individual product links - Check
 * Sorted products - Check
 * Clicked update product - Check
-* Delete product - EROR 500
-* Delete button has defensive modal - ERROR
+* Delete product - Check
 
-![products-html.png](/media/products-html.png)
+* ![products-html.png](/media/products-html.png)
 
 ### Product Details
 
 * Quantity selector working as expected - Check
 * Star rating updates with new reviews - Check
-![pd-html.png](/media/pd-html.png)
+* ![pd-html.png](/media/pd-html.png)
 * Clicked every button, redirects properly - Check
-![pd2-html.png](/media/pd2-html.png)
+* ![pd2-html.png](/media/pd2-html.png)
 * Delete button has defensive modal - Check
-![pd3-html.png](/media/pd3-html.png)
+* ![pd3-html.png](/media/pd3-html.png)
 * Delete button has defensive modal - Check
-* Delete product - ERROR 500
 
 ### Add/Edit Products
 
 * Form validation working - Check
-![manage-html.png](/media/manage-html.png)
+* ![manage-html.png](/media/manage-html.png)
 * Clicked all buttons - Check
 * Items created/updated successfully - Check
 
@@ -141,32 +139,31 @@ As a Store Owner, I want to:
 * Product Details button redirects to product details page - Check
 * Remove from wishlist button removes item from wishlist - Check
 * Category badge redirects to products/category - Check
-![wishlist-html.png](/media/wishlist-html.png)
+* ![wishlist-html.png](/media/wishlist-html.png)
 
 ### Profile
 
 * Order history displaying - Check
 * Update shipping information form working - Check
-![profile-html.png](/media/profile-html.png)
+* ![profile-html.png](/media/profile-html.png)
 
 ### Bag
 
-* Quantity selector incrementing and decrementing - ERROR
 * Remove and update buttons - Check
 * Keep shopping button redirect to products page - Check
 * Secure checkout button redirects to checkout page - Check
-![bag-html.png](/media/bag-html.png)
+* ![bag-html.png](/media/bag-html.png)
 
 ### Checkout
 
 * Form validation fully functional - Check
-![checkout-html.png](/media/checkout-html.png)
+* ![checkout-html.png](/media/checkout-html.png)
 * Confirmation email sent to user - Check
-![checkout2-html.png](/media/checkout2-html.png)
+* ![checkout2-html.png](/media/checkout2-html.png)
 * Adjust bag button redirects to bag page - Check
 * Complete order starts the payment with stripe - Check
 * Payment succeded in stripe events - Check
-![checkout3-html.png](/media/checkout3-html.png)
+* ![checkout3-html.png](/media/checkout3-html.png)
 
 ### Checkout Success
 
@@ -176,12 +173,11 @@ As a Store Owner, I want to:
 ### Contact Form
 
 * Form validation fully functional - Check
-![contact-html.png](/media/contact-html.png)
+* ![contact-html.png](/media/contact-html.png)
 
 * Submit button sends message and redirects to contact success page - Check
-![contact2-html.png](/media/contact2-html.png)
+* ![contact2-html.png](/media/contact2-html.png)
 
-* User receives confirmation email - ERROR
 * Store receives user inquiry by mail- Check
 
 ### Allauth templates, 404.html, 500.html, toasts
@@ -190,16 +186,18 @@ As a Store Owner, I want to:
 * Form validation fully functional - Check
 
 
+### Known bugs
 
-
+* Quantity selector in bag.html allows users to go under 0 in desktop resolutions. Is not a detrimental fix, but it would improve ux.
+* Image set warning in add/edit product will only appear under one image input.
 
 
 
 ### Code Validation
 
-*  ![Valid HTML!](/media/valid-html.png) HTML has been validated by [W3C validator](https://validator.w3.org/)
+* ![Valid HTML!](/media/valid-html.png) HTML has been validated by [W3C validator](https://validator.w3.org/)
 
-*  ![Valid CSS!](/media/valid-css.jpg) CSS has been validated by [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
+* ![Valid CSS!](/media/valid-css.jpg) CSS has been validated by [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
 
 ### Responsiveness
 The responsiveness of the website has been tested with Chrome Developer Tools and Chrome Responsive Viewer.
