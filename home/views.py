@@ -28,8 +28,8 @@ def contact(request):
 
             try:
                 send_mail(
-                    subject, message, 'admin@example.com', [
-                        'admin@example.com'])
+                    subject, message, body['email'], [
+                        'email'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
 

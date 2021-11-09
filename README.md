@@ -176,7 +176,7 @@ Navbar collapses into a burger button in small resolutions.
 For the low fidelity wireframes, Figma software has been used to lay out the foundations of the website.
 
 * [Mobile Wireframes](https://www.figma.com/file/DvtZaopG5Rk2rmlRjq2rjd/FLAVORS-MOBILE?node-id=0%3A1)
-* [Tablet Wireframes]()
+* [Tablet Wireframes](https://www.figma.com/file/wkdMlD0Exy6eeNVUAHff4y/FLAVORS-TABLET?node-id=0%3A1)
 * [Desktop Wireframes](https://www.figma.com/file/x6ghJZi3aYCT4i1lB1MjAc/FLAVORS-DESKTOP?node-id=0%3A1)
 
 ### Surface

@@ -177,8 +177,10 @@ As a Store Owner, I want to:
 
 * Form validation fully functional - Check
 ![contact-html.png](/media/contact-html.png)
+
 * Submit button sends message and redirects to contact success page - Check
-![contact2-html.png](/media/contact-html.png)
+![contact2-html.png](/media/contact2-html.png)
+
 * User receives confirmation email - ERROR
 * Store receives user inquiry by mail- Check
 
